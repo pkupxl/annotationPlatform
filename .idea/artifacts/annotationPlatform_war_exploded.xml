@@ -8,6 +8,7 @@
           <element id="module-output" name="annotationPlatform" />
         </element>
       </element>
+      <element id="dir-copy" path="$PROJECT_DIR$" />
     </root>
   </artifact>
 </component>

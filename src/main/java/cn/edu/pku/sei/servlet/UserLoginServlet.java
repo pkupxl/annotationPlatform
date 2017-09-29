@@ -31,6 +31,7 @@ public class UserLoginServlet extends HttpServlet{
     String sqlUser;
     String sqlPwd;
     String sqlDriver;
+
     @Override
     protected void doGet(HttpServletRequest request , HttpServletResponse response)throws ServletException , IOException{
         doPost(request , response);

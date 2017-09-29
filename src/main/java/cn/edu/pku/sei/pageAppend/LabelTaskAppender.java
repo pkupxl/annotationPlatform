@@ -9,6 +9,7 @@ import cn.edu.pku.sei.Annotator.Operator.TaskResultOperator;
 public class LabelTaskAppender {
     private static final int DISPLAY_ITEM_PER_PAGE = 100;
     private String userID;
+    private int taskID;
     private String[][]content;
     private boolean[] hasResults;
     private int currentPageIndex = -1;
@@ -20,6 +21,7 @@ public class LabelTaskAppender {
         taskOperator = new TaskOperator(taskID);
         taskResultOperator = new TaskResultOperator(taskID);
         this.userID = userID;
+        this.taskID = taskID;
     }
 
     private void updateContent(int pageIndex){
@@ -49,7 +51,7 @@ public class LabelTaskAppender {
     }
 
     private String appendAnItemToNavigate(int pageIndex , int index  , String displayString , int dataIndex) {
-        String parameters = "pageIndex=" + pageIndex + "&" + "dataIndex=" + index;
+        String parameters = "taskID=" + taskID + "&" +"pageIndex=" + pageIndex + "&" + "dataIndex=" + index;
         if(index == dataIndex)
             return convert(parameters , displayString , "item-current");
         else if(hasResults[index])

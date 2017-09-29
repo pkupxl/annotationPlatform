@@ -274,7 +274,7 @@
                             try {
                                 appender =(LabelTaskAppender)context.getAttribute(userID + "_" +PageParameter.labelTaskAppender);
                                 if(appender == null){
-                                    int taskID =1; //= Integer.parseInt(request.getParameter("taskID"));
+                                    int taskID = 1;//Integer.parseInt(request.getParameter("taskID"));
                                     appender = new LabelTaskAppender(taskID , userID);
                                     session.setAttribute(userID + "_" + PageParameter.labelTaskAppender , appender);
                                 }

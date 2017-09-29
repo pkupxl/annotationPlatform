@@ -2,6 +2,8 @@ package cn.edu.pku.sei.pageAppend;
 
 import cn.edu.pku.sei.configuration.URL;
 
+import java.util.ResourceBundle;
+
 /**
  * Created by oliver on 2017/8/8.
  */
@@ -33,6 +35,12 @@ public class LabelItemNavigatorAppender implements Appender{
         this.indexStep = step;
     }
     //endregion
+
+    public static void main(String[] args){
+        ResourceBundle bundle = ResourceBundle.getBundle("database");
+        String test = bundle.getString("userInfoDatabaseUrl");
+    }
+
 
     public void labelItemNavigatorAppender(int currentIndex , int endIndex , int indexStep){
         this.currentIndex = currentIndex;
