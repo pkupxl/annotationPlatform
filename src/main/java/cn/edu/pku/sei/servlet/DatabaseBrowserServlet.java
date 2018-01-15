@@ -108,9 +108,7 @@ public class DatabaseBrowserServlet extends HttpServlet{
 
     JSONObject columnsInfoToJSON(Map<String , String> columns){
         JSONObject result = new JSONObject();
-
         JSONArray jsonArray = new JSONArray();
-
         String columnName ;
         String dataType;
         for(Entry<String ,String> column : columns.entrySet()){
@@ -121,9 +119,12 @@ public class DatabaseBrowserServlet extends HttpServlet{
             object.put("dataType" , dataType);
             jsonArray.put(object);
         }
-
         result.put("columns" , jsonArray);
         return result;
     }
-
 }
+
+
+
+
+

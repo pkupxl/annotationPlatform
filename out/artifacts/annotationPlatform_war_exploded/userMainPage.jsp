@@ -30,8 +30,8 @@
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <script src="js/sidebarMenuCreator.js"></script>
     <script type="text/javascript" src="js/userMainPage.js"></script>
+    <script src="js/sidebarMenuCreator.js"></script>
     <![endif]-->
 
     <!-- Google Font -->
@@ -540,6 +540,11 @@
     </div>
     <!-- /.content-wrapper -->
 
+
+
+
+
+
     <footer class="main-footer">
         <div class="pull-right hidden-xs">
             <b>Version</b> 2.4.0
@@ -757,6 +762,4 @@
 <!-- AdminLTE for demo purposes -->
 <script src="js/demo.js"></script>
 <script src="js/userMainPage.js"></script>
-
-
 </body></html>

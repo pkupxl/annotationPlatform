@@ -33,5 +33,4 @@ public class PageParameter {
     public static String color(int index){
         return colorContent[index % colorContent.length];
     }
-
 }

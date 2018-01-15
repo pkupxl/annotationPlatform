@@ -114,10 +114,8 @@ public class UserLoginServlet extends HttpServlet{
             sqlUser = bundle.getString(userInfoDatabaseUser);
             sqlPwd = bundle.getString(userInfoDatabasePwd);
             sqlDriver = bundle.getString(userInfoDatabaseDriver);
-
             String temp = bundle.getString(userInfoTableName);
             sqlLogin = sqlLogin.replace("TABLENAME" , temp);
-
             Queryconn = new SqlConnector(sqlUrl , sqlUser , sqlPwd , sqlDriver);
             Insertconn = new SqlConnector(sqlUrl , sqlUser , sqlPwd , sqlDriver);
         } catch(Exception e){

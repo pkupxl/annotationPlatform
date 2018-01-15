@@ -23,8 +23,6 @@ public class TaskOperator {
     private int ITEM_COUNT = 10; // the number of rows in the data resource table
 
     private String displayColumns = "";
-
-
     // region getter and setter
     public String[] getDisplayColumns (){
         if(displayColumns.length() > 0)
@@ -76,7 +74,6 @@ public class TaskOperator {
         conn_getter.start();
         conn_setter.start();
         conn_setter.setPreparedStatement(sql_insert);
-
         conn_getter.setPreparedStatement(sql_question);
         ResultSet rs = conn_getter.executeQuery();
         conn_getter.setPreparedStatement(sql_answer);
@@ -99,8 +96,6 @@ public class TaskOperator {
                 }
             }
         }
-
-
     }
 
     public TaskOperator(int taskID){
@@ -115,15 +110,12 @@ public class TaskOperator {
 
     private void initDataSourceInfo(int taskID){
         ResourceBundle bundle = ResourceBundle.getBundle("database");
-
         String url = bundle.getString("platformInfoDatabaseURL");
         String user = bundle.getString("platformInfoDatabaseUser");
         String pwd = bundle.getString("platformInfoDatabasePwd");
         String driver = "com.mysql.jdbc.Driver";
         String tasksTable = bundle.getString("tasksTableName");
-
         SqlConnector conn = new SqlConnector(url , user , pwd , driver);
-
         try {
             String sql = "select databaseURL , databaseUser , databasePwd , tableName ,primaryKey from " + tasksTable +" where taskID=" + taskID;
             conn.start();
@@ -145,7 +137,6 @@ public class TaskOperator {
 
     private void initDisplayItemInfo(int taskID){
         ResourceBundle bundle = ResourceBundle.getBundle("database");
-
         String url = bundle.getString("displayColumnsInfoDatabaseURL");
         String user = bundle.getString("displayColumnsInfoDatabaseUser");
         String pwd = bundle.getString("displayColumnsInfoDatabasePwd");
@@ -171,7 +162,6 @@ public class TaskOperator {
         }finally {
             conn.close();
         }
-
     }
 
     private void initItemCountInfo(){
@@ -205,6 +195,9 @@ public class TaskOperator {
      *             1.the columns of the item will display
      *             2.the primary key of this item at the first column
      */
+
+
+
     public String[][] getItemsByPageIndex(int pageIndex , int itemPerPage){
         if(isValid()){
             SqlConnector conn = new SqlConnector(databaseURL , databaseUser , databasePwd , databaseDriver);

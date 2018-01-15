@@ -272,20 +272,18 @@
                             ServletContext context = getServletConfig().getServletContext();
                             LabelTaskAppender appender = null;
                             try {
-                                appender =(LabelTaskAppender)context.getAttribute(userID + "_" +PageParameter.labelTaskAppender);
+                                appender =(LabelTaskAppender)session.getAttribute(userID + "_" +PageParameter.labelTaskAppender);
                                 if(appender == null){
-                                    int taskID = 1;//Integer.parseInt(request.getParameter("taskID"));
+                                    int taskID = Integer.parseInt(request.getParameter("taskID"));
                                     appender = new LabelTaskAppender(taskID , userID);
                                     session.setAttribute(userID + "_" + PageParameter.labelTaskAppender , appender);
                                 }
                             }catch(Exception e){
                                 e.printStackTrace();
                             }
-                            out.print(appender.getItemDisplayInfoString(pageIndex , dataIndex));
+                          out.print(appender.getItemDisplayInfoString(pageIndex , dataIndex));
                         %>
                     </div>
-
-
                 </div>
 
                 <!--功能区-->
@@ -564,6 +562,5 @@
 <script src="js/demo.js"></script>
 <script src="js/userMainPage.js"></script>
 <script src="js/labelTask.js"></script>
-
 
 </body></html>

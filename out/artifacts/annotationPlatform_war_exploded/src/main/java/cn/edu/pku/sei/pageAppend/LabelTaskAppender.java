@@ -63,7 +63,6 @@ public class LabelTaskAppender {
     private String convert(String parameters , String displayString , String style){
         String template ="<a type='button' class='CLASS'  href='labelTask.jsp?PARAMETERS'>DISPLAY_STRING </a>";
         String clazz = "display-item pull-left btn placeholders btn-default " + style;
-
         String result = template.replace("CLASS" , clazz);
         result = result.replace("PARAMETERS" , parameters);
         result = result.replace("DISPLAY_STRING" , displayString);
@@ -106,7 +105,7 @@ public class LabelTaskAppender {
 
     public String getOperationSectionAppendString(int dataIndex){
         int itemID = Integer.parseInt(content[dataIndex][0]);
-        String[] results = taskResultOperator.getAnnotationResults(itemID , "admin");
+        String[] results = taskResultOperator.getAnnotationResults(itemID , userID);
         String resultDisplayString = "";
         if(results != null){
             for(int i = 0 ; i < results.length ; i++){
@@ -155,7 +154,7 @@ public class LabelTaskAppender {
                     "<input id='addAnnotation' type='text' class='operationSection-input'>" +
                 "</th>" +
                 "<th class='operationSection-operation'>" +
-                    "<i class='operation fa fa-plus bg-yellow' onclick='addAnnotation(\"" + userID + "\" , " + currentPageIndex + " , " + dataIndex + " );'></i>" +
+                    "<i class='operation fa fa-plus bg-yellow' onclick='addAnnotation(\"" + userID + "\" , " + currentPageIndex + " , " + dataIndex + ");'></i>" +
                 "</th>" +
             "</tr>";
         return result;

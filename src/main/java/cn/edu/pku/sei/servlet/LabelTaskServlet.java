@@ -43,12 +43,12 @@ public class LabelTaskServlet extends HttpServlet{
         //response.sendRedirect("userMainPage.jsp");
         //response.sendRedirect("labelTask.jsp?pageIndex=" + pageIndex + "&" + "dataIndex=" + dataIndex);
 
-        RequestDispatcher dispatcher = request.getRequestDispatcher("userMainPage.jsp");
-        dispatcher.forward(request , response);
-
-        /*RequestDispatcher dispatcher = request.getRequestDispatcher("labelTask.jsp?pageIndex=" + pageIndex + "&" + "dataIndex=" + dataIndex );
-
+        /*RequestDispatcher dispatcher = request.getRequestDispatcher("userMainPage.jsp");
         dispatcher.forward(request , response);*/
+
+        RequestDispatcher dispatcher = request.getRequestDispatcher("labelTask.jsp?pageIndex=" + pageIndex + "&" + "dataIndex=" + dataIndex );
+
+        dispatcher.forward(request , response);
 
     }
 }

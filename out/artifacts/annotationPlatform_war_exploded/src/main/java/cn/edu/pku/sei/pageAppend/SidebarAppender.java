@@ -4,7 +4,6 @@ package cn.edu.pku.sei.pageAppend;
  * Created by oliver on 2017/7/28.
  */
 public class SidebarAppender implements Appender{
-
     public String getAppendString(){
         return "";
     }
@@ -13,12 +12,9 @@ public class SidebarAppender implements Appender{
         String result;
         String urlTemp;
         result = "<li class=\"header\">MAIN </li>";
-
         //region labelTaskConstructPage
        result += getLabelTaskString();
        result += getLabelTaskBrowserString();
-
-
         return result;
     }
 
@@ -31,7 +27,6 @@ public class SidebarAppender implements Appender{
                     "<i class='fa fa-dashboard'></i><span>创建标注任务</span>" +
                 "</a>" +
             "</li>";
-
         return result;
     }
 
@@ -46,7 +41,4 @@ public class SidebarAppender implements Appender{
             "</li>";
         return result;
     }
-
 }
-
-

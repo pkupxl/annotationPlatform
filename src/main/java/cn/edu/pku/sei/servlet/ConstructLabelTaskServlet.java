@@ -46,7 +46,6 @@ public class ConstructLabelTaskServlet extends HttpServlet{
 
     private boolean createTask(HttpServletRequest request , HttpServletResponse response){
         boolean result = true;
-
         String databaseURL = request.getParameter("databaseURL");
         String databaseUser = request.getParameter("databaseUser");
         String databasePwd = request.getParameter("databasePwd");

@@ -198,7 +198,6 @@ public class TaskResultOperator {
             conn.close();
             return result;
         }
-
     }
 
     public String[] getAnnotationResults(int itemID , String userID){

@@ -12,7 +12,6 @@ import java.util.Map;
  * Created by oliver on 2017/7/20.
  */
 public class DatabaseBrowser {
-
     private SqlConnector conn;
     private String sqlUrl = "";
     private String sqlUser = "";
@@ -20,10 +19,8 @@ public class DatabaseBrowser {
     private String sqlDriverName = "";
     private String sqlDatabaseName = "";
     private String sqlTableName = "";
-
     private String sqlGetTablesInfo = "select TABLE_NAME from INFORMATION_SCHEMA.TABLES where table_schema='DATABASENAME' and table_type='base table'";
     private String sqlGetTableColumnInfo = "select COLUMN_NAME , DATA_TYPE from INFORMATION_SCHEMA.COLUMNS where table_name='TABLENAME'";
-
     private boolean dataBaseConditon;
 
     //region setter

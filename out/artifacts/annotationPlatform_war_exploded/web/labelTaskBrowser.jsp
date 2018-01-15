@@ -2,7 +2,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ page import="cn.edu.pku.sei.pageAppend.SidebarAppender"%>
 <%@ page import="cn.edu.pku.sei.pageAppend.LabelTaskBrowserAppender"%>
-
+<%@ page import="cn.edu.pku.sei.CookieOperations" %>
 
 <!-- saved from url=(0059)https://adminlte.io/themes/AdminLTE/pages/layout/boxed.html -->
 <html class="gr__adminlte_io" style="height: auto; min-height: 100%;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -236,6 +236,9 @@
     <!-- =============================================== -->
 
     <!-- Content Wrapper. Contains page content -->
+
+
+
     <div class="content-wrapper" style="min-height: 976px;">
         <!-- Content Header (Page header) -->
         <section class="content-header">
@@ -246,10 +249,137 @@
         </section>
 
         <!-- Main content -->
+        <!--
         <section class="content">
+
+
+                        <div class="browser-section box">
+                            <div class="box-header with-border" >
+                                <h3>我的任务列表</h3>
+                            </div>
+                            <div class="box-body">
+                                <ul id="taskBroswer" class="tree" data-widget="tree">  -->
+                                    <!--
+                                    <li style="list-style-type:none;margin:0px;padding:0px" class="treeview">
+                                        <a href="#">
+                                            <span>
+                                                <table class="table table-bordered" style="margin:0px">
+                                                    <tbody>
+                                                        <tr id="tasksdTable">
+                                                            <th class="task-index">#</th>
+                                                            <th class="task-creator">创建者</th>
+                                                            <th class="task-tableName">数据表</th>
+                                                            <th class="task-operation">操作</th>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </span>
+                                        </a>
+                                        <ul class="treeview-menu">
+                                            <li>
+                                                <div style="margin:10px">
+                                                    <input type="text" name="q" class="form-control" placeholder="Search...">
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li style="list-style-type:none;margin:0px;padding:0px" class="treeview">
+                                        <a href="#">
+                                            <span>
+                                                <table class="table table-bordered">
+                                                    <tbody>
+                                                        <tr id="tasksdTable">
+                                                            <th class="task-index">#</th>
+                                                            <th class="task-creator">创建者</th>
+                                                            <th class="task-tableName">数据表</th>
+                                                            <th class="task-operation">操作</th>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </span>
+
+                                        </a>
+                                        <ul class="treeview-menu">
+                                            <li>
+                                                <div>
+                                                    <input type="text" name="q" class="form-control" placeholder="Search...">
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li style="list-style-type:none" class="treeview">
+                                        <a href="#">
+                                            <span>
+                                                <table class="table table-bordered">
+                                                    <tbody>
+                                                        <tr id="tasksTable">
+                                                            <th class="task-index">#</th>
+                                                            <th class="task-creator">创建者</th>
+                                                            <th class="task-tableName">数据表</th>
+                                                            <th class="task-operation">操作</th>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </span>
+
+                                        </a>
+                                        <ul class="treeview-menu">
+                                            <li>
+                                                <div>
+                                                    <input type="text" name="q" class="form-control" placeholder="Search...">
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                -->
+                  <!--
+                          int index;
+                            try{
+                                index = Integer.parseInt(request.getParameter("index"));
+                            }catch(Exception e){
+                                index = 0;
+                            }
+                            String userID = CookieOperations.getCookieValue(request , "userID");
+                            System.out.println(userID);
+                            out.print(LabelTaskBrowserAppender.getMyTaskBrowserAppendString(index,userID));
+
+
+                    </ul>
+                </div>
+
+
+                <div class="box-footer clearfix">
+                    <ul id="taskBrowserFooter" class="pagination pagination-sm no-margin pull-right">
+
+                            out.print(LabelTaskBrowserAppender.getTaskBrowserFooterAppendString());
+                   -->
+                        <!--
+                        <li>
+                            <a >«</a>
+                        </li>
+                        <li>
+                            <a>1</a>
+                        </li>
+                        <li>
+                            <a>2</a>
+                        </li>
+                        <li>
+                            <a href="labelTaskBrowser.jsp?index=2">3</a>
+                        </li>
+                        <li>
+                            <a>»</a>
+                        </li>
+                    -->
+        <!--
+                    </ul>
+                </div>
+            </div>
+
+        -->
             <div class="browser-section box">
                 <div class="box-header with-border" >
-                    <h3>任务列表</h3>
+                    <a href="labelTaskBrowser.jsp">全部任务列表</a>
+                    <a href="mylabelTaskBrowser.jsp">我的任务列表</a>
                 </div>
                 <div class="box-body">
                     <ul id="taskBroswer" class="tree" data-widget="tree">
@@ -337,6 +467,8 @@
                         %>
                     </ul>
                 </div>
+
+
                 <div class="box-footer clearfix">
                     <ul id="taskBrowserFooter" class="pagination pagination-sm no-margin pull-right">
                         <%
@@ -362,6 +494,7 @@
                     </ul>
                 </div>
             </div>
+
         </section>
         <!-- /.content -->
     </div>

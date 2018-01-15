@@ -229,7 +229,6 @@ public class Task {
             conn.close();
             return result;
         }
-
     }
 
     public static String getDisplayColumnsTableName(int taskID){
@@ -239,10 +238,4 @@ public class Task {
     public static String getResultsTableName(int taskID){
         return "results_" + taskID;
     }
-
 }
-
-
-
-
-

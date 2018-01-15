@@ -15,7 +15,6 @@ public class ItemAnnotator {
     public String[] classificationCategory;
     public int[] classificationCategoryCount;
     public ResultSet rs;
-
     private String sqlUrl;
     private String sqlUser;
     private String sqlPassword;

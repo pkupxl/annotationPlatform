@@ -2,8 +2,6 @@
  * Created by oliver on 2017/8/10.
  */
 
-
-
 function addAnnotation(userID , pageIndex , dataIndex){
 
     var annotation = $("#addAnnotation").val();
@@ -22,7 +20,7 @@ function addAnnotation(userID , pageIndex , dataIndex){
         data:parameters,
         async: false,
         success:function (data) {
-            window.location.href="labelTask.jsp?pageIndex=" + pageIndex + "&" + "dataIndex=" + dataIndex;
+            window.location.href="labelTask.jsp?pageIndex=" + pageIndex + "&" + "dataIndex=" + dataIndex ;
         }
     });
 }

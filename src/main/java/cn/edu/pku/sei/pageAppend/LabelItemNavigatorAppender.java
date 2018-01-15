@@ -70,19 +70,16 @@ public class LabelItemNavigatorAppender implements Appender{
 
     private String produceOneItem(int index , String displayString){
         String background = getDisplayColor(index);
-
         String result = "<a type='PARA_TYPE' class='PARA_CLASS' style='PARA_STYLE' href='PARA_HREF'>PARA_DISPLAY</a>";
         String PARA_TYPE = "button";
         String PARA_CLASS = "pull-left btn placeholders btn-default";
         String PARA_STYLE = "text-align:center;width:40px;height:25px;background:" + background + ";color:white";
         String PARA_HREF = URL.URL_LABEL_TASK;
-
         result = result.replace("PARA_TYPE" , PARA_TYPE);
         result = result.replace("PARA_CLASS" , PARA_CLASS);
         result = result.replace("PARA_STYLE" , PARA_STYLE);
         result = result.replace("PARA_HREF" , PARA_HREF);
         result = result.replace("PARA_DISPLAY" , displayString);
-
         return result;
     }
 
@@ -92,5 +89,4 @@ public class LabelItemNavigatorAppender implements Appender{
         else
             return "#FFFFFF";
     }
-
 }

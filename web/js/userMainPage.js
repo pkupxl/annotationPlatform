@@ -46,7 +46,6 @@ function getColumnsInfo(){
             columnsInfo = data;
         }
     });
-
     displayColumnsInfo(columnsInfo);
 }
 
@@ -148,7 +147,6 @@ function getElementName(element){
 function add(element){
     var temp = document.getElementById(element.id);
     if(temp){
-
         element.remove();
         var elementParameter={
             name : getElementName(temp)
@@ -168,7 +166,6 @@ function remove(element){
         appendElementToDisplayCandidate(elementParameter);
         reorderElements();
     }
-
 }
 
 function moveUp(element){
@@ -193,8 +190,6 @@ function createTask(){
     var database_url = "jdbc:mysql://" + $("#database_url").val() + ":" + $("#database_port").val() + "/" + $("#database_database").val();
     var database_user = $("#database_user").val();
     var database_pwd = $("#database_pwd").val();
-
-
     var tableName = $("#tableOptions").val();
     var columns = $("#displayElements").find("tr");
     var primaryKey = getPrimaryKey();
