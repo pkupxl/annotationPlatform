@@ -25,9 +25,11 @@ public class UserLoginServlet extends HttpServlet{
     String userInfoTableName = "userInfoTableName";
     String sqlLogin = "select * from TABLENAME where ID=? AND pwd=?";
     String sqlregister = "insert into account (ID , pwd) values(? , ?)";
+    String sqlinittaskinfo="insert into usertaskinfo (userID , createdtask , annotatetask) values(? , ? , ?)";
     String sqlregisterSearch ="select * from account where ID=?";
     SqlConnector Queryconn;
     SqlConnector Insertconn;
+    SqlConnector Inittaskconn;
     String sqlUrl;
     String sqlUser;
     String sqlPwd;
@@ -80,6 +82,13 @@ public class UserLoginServlet extends HttpServlet{
             String user = request.getParameter("user");
             String pwd = request.getParameter("pwd");
             try {
+                Inittaskconn.start();
+                Inittaskconn.setPreparedStatement(sqlinittaskinfo);
+                Inittaskconn.setString(1,user);
+                Inittaskconn.setString(2,"");
+                Inittaskconn.setString(3,"");
+                Inittaskconn.executeUpdate();
+
                 Queryconn.start();
                 Queryconn.setPreparedStatement(sqlregisterSearch);//必须在start之后
                 Queryconn.setString(1, user);
@@ -100,6 +109,9 @@ public class UserLoginServlet extends HttpServlet{
                 }
             }catch (Exception e) {
                 System.out.println(e.getMessage());
+            }finally{
+                Inittaskconn.close();
+                Queryconn.close();
             }
         }
     }
@@ -108,6 +120,7 @@ public class UserLoginServlet extends HttpServlet{
         System.out.println("initiate the user login servlet");
         ResourceBundle bundle;
         try {
+
             ClassLoader temdp = ClassLoader.getSystemClassLoader();
             bundle = ResourceBundle.getBundle("database");
             sqlUrl = bundle.getString(userInfoDatabaseUrl);
@@ -118,6 +131,8 @@ public class UserLoginServlet extends HttpServlet{
             sqlLogin = sqlLogin.replace("TABLENAME" , temp);
             Queryconn = new SqlConnector(sqlUrl , sqlUser , sqlPwd , sqlDriver);
             Insertconn = new SqlConnector(sqlUrl , sqlUser , sqlPwd , sqlDriver);
+            Inittaskconn = new SqlConnector(sqlUrl , sqlUser , sqlPwd , sqlDriver);
+
         } catch(Exception e){
             System.out.println(e.getMessage());
         }

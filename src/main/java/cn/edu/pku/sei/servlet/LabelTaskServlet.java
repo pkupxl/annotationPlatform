@@ -45,9 +45,7 @@ public class LabelTaskServlet extends HttpServlet{
 
         /*RequestDispatcher dispatcher = request.getRequestDispatcher("userMainPage.jsp");
         dispatcher.forward(request , response);*/
-
         RequestDispatcher dispatcher = request.getRequestDispatcher("labelTask.jsp?pageIndex=" + pageIndex + "&" + "dataIndex=" + dataIndex );
-
         dispatcher.forward(request , response);
 
     }

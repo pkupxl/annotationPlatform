@@ -9,7 +9,6 @@ public class PageParameter {
     public static final String database_database = "database[database]";
     public static final String database_user = "database[user]";
     public static final String database_pwd = "database[pwd]";
-
     public static final String pageIndex = "pageIndex";
     public static final String getAllItem = "allItem";
     public static final String deleteItem = "deleteItem";

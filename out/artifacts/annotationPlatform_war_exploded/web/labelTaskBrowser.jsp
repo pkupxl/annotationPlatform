@@ -379,7 +379,6 @@
             <div class="browser-section box">
                 <div class="box-header with-border" >
                     <a href="labelTaskBrowser.jsp">全部任务列表</a>
-                    <a href="mylabelTaskBrowser.jsp">我的任务列表</a>
                 </div>
                 <div class="box-body">
                     <ul id="taskBroswer" class="tree" data-widget="tree">
@@ -463,7 +462,8 @@
                             }catch(Exception e){
                                 index = 0;
                             }
-                            out.print(LabelTaskBrowserAppender.getTaskBrowserAppendString(index));
+                            String userID = CookieOperations.getCookieValue(request , "userID");
+                            out.print(LabelTaskBrowserAppender.getTaskBrowserAppendString(index,userID));
                         %>
                     </ul>
                 </div>
@@ -717,6 +717,6 @@
 <!-- AdminLTE for demo purposes -->
 <script src="js/demo.js"></script>
 <script src="js/userMainPage.js"></script>
-
+<script src="js/labelTaskBrowser.js"></script>
 
 </body></html>

@@ -2,7 +2,7 @@
  * Created by oliver on 2017/8/10.
  */
 
-function addAnnotation(userID , pageIndex , dataIndex){
+function addAnnotation(userID , pageIndex , dataIndex ,taskID ,subtaskID){
 
     var annotation = $("#addAnnotation").val();
 
@@ -20,12 +20,12 @@ function addAnnotation(userID , pageIndex , dataIndex){
         data:parameters,
         async: false,
         success:function (data) {
-            window.location.href="labelTask.jsp?pageIndex=" + pageIndex + "&" + "dataIndex=" + dataIndex ;
+            window.location.href="labelTask.jsp?taskID="+taskID+"&subtaskID="+subtaskID+"&pageIndex=" + pageIndex + "&" + "dataIndex=" + dataIndex ;
         }
     });
 }
 
-function deleteAnnotation(userID , pageIndex , dataIndex , annotation){
+function deleteAnnotation(userID , pageIndex , dataIndex , annotation ,taskID ,subtaskID){
     var parameters = {
         requestType:"deleteAnnotation",
         userID:userID ,
@@ -40,7 +40,7 @@ function deleteAnnotation(userID , pageIndex , dataIndex , annotation){
         data:parameters,
         async:false,
         success:function (data) {
-            window.location.href="labelTask.jsp?pageIndex=" + pageIndex + "&" + "dataIndex=" + dataIndex;
+            window.location.href="labelTask.jsp?taskID="+taskID+"&subtaskID="+subtaskID+"&pageIndex=" + pageIndex + "&" + "dataIndex=" + dataIndex ;
         }
     });
 }

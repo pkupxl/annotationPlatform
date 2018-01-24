@@ -465,9 +465,7 @@
                                 </div>
                                 <div class="form-group" style="text-align:center" align="center">
                                     <a type="btn btn-block btn-info btn-lg" onclick="getTablesInfo();">CONNECT</a>
-
                                 </div>
-
                             </form>
                         </div>
                     </div>
@@ -509,7 +507,6 @@
                                 <div class="form-group" align="center">
                                     <a type="btn btn-block btn-info btn-lg" onclick="createTask();">建立</a>
                                 </div>
-
                             </form>
                         </div>
                     </div>

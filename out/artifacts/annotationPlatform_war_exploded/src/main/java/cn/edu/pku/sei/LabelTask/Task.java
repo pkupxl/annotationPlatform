@@ -15,13 +15,13 @@ public class Task {
     private String databaseDriver = "com.mysql.jdbc.Driver";
     private String databaseTableName = "";
     private String primaryKey="";
-
     private String[] displayColumns = null;
-
     private String creator = "";
     private String detailInfo = "";
+    private int itemNum = 0;
+    private int subtaskNum=0;
 
-    private String addSQL = "insert into TASKSTABLENAME (taskID , userID , databaseURL , databaseUser , databasePwd , databaseDriver , tableName , primaryKey) VALUES(?,?,?,?,?,?,? ,?)";
+    private String addSQL = "insert into TASKSTABLENAME (taskID , userID , databaseURL , databaseUser , databasePwd , databaseDriver , tableName , primaryKey , itemNum , subtaskNum ) VALUES(?,?,?,?,?,?,?,?,?,?)";
 
     // region getter and setter
     public String getDatabaseURL(){
@@ -111,6 +111,7 @@ public class Task {
         if(!isCompleted()) return false;
         boolean result = true;
         SqlConnector conn = null;
+        SqlConnector conn1 = null;
         try{
             ResourceBundle bundle = ResourceBundle.getBundle("database");
             String url = bundle.getString("platformInfoDatabaseURL" );
@@ -130,6 +131,16 @@ public class Task {
             if(rs.next()){
                 taskID = rs.getInt(1) + 1;
             }
+            conn1=new SqlConnector(databaseURL , databaseUser , databasePwd ,  databaseDriver);
+            String sql1= null;
+            sql1="select count(Id) from "+databaseTableName;
+            conn1.start();
+            conn1.setPreparedStatement(sql1);
+            rs = conn1.executeQuery();
+            if(rs.next()) {
+                itemNum = rs.getInt(1);
+            }
+            conn1.close();
 
             sql = addSQL.replace("TASKSTABLENAME" , tasksTableName);
             conn.setPreparedStatement(sql);
@@ -142,17 +153,96 @@ public class Task {
             conn.setString(6 , databaseDriver);
             conn.setString(7 , databaseTableName);
             conn.setString(8 , primaryKey);
+            conn.setInt(9 ,itemNum);
+            conn.setInt(10,subtaskNum);
             conn.execute();
 
+            addTaskInfotoDatabase(taskID);
             addDisplayColumnsToDatabase(taskID);
             addResultsTableToDatabase(taskID);
+            addSubTasksToDatabase(taskID);
         }catch(Exception e){
             System.out.println(e.getMessage());
         }finally {
-           conn.close();
-           return result;
+            conn.close();
+            return result;
         }
     }
+
+    boolean addTaskInfotoDatabase(int taskID){
+        boolean result=true;
+        String Querysql="select * from usertaskinfo where userID = ?";
+        String sql="update usertaskinfo set createdtask = ? where userID = ?";
+        SqlConnector conn = null;
+        SqlConnector conn1= null;
+        try {
+            ResourceBundle bundle = ResourceBundle.getBundle("database");
+            String url = bundle.getString("userInfoDatabaseUrl");
+            String user = bundle.getString("userInfoDatabaseUser");
+            String pwd = bundle.getString("userInfoDatabasePwd");
+            String driver = bundle.getString("userInfoDatabaseDriver");
+            conn = new SqlConnector(url, user, pwd, driver);
+            conn.start();
+            conn.setPreparedStatement(Querysql);
+            conn.setString(1,creator);
+            ResultSet rs = conn.executeQuery();
+            if(rs.next())
+            {
+                String Createdtask= rs.getString(2);
+                if(Createdtask.isEmpty()) {
+                    Createdtask=Integer.toString(taskID);
+                }
+                else {
+                    Createdtask=Createdtask+","+Integer.toString(taskID);
+                }
+                conn1 = new SqlConnector(url, user, pwd, driver);
+                conn1.start();
+                conn1.setPreparedStatement(sql);
+                conn1.setString(1,Createdtask );
+                conn1.setString(2, creator);
+                conn1.executeUpdate();
+                conn1.close();
+            }
+        }catch(Exception e){
+            System.out.println(e.getMessage());
+        }finally {
+            conn.close();
+            return result;
+        }
+    }
+
+    boolean addSubTasksToDatabase(int taskID){
+        boolean result =true;
+        String subtasksTableName = getSubTasksTableName( taskID);
+        SqlConnector conn = null;
+
+        try{
+            ResourceBundle bundle = ResourceBundle.getBundle("database");
+            String url = bundle.getString("subtasksInfoURL");
+            String user = bundle.getString("subtasksInfoUser");
+            String pwd = bundle.getString("subtasksInfoPwd");
+            String driver = bundle.getString("subtasksInfoDriver");
+
+            conn = new SqlConnector(url , user , pwd , driver);
+            conn.start();
+            String sql = "create table " + subtasksTableName + "(" +
+                    "SubtaskId int(11) NOT NULL,"+
+                    "Annotator varchar(50) ,"+
+                    "start int(11) NOT NULL," +
+                    "end int(11) NOT NULL,"+
+                    "primary key(SubtaskId)"+
+                    ")ENGINE=InnoDB default charset=utf8;";
+            conn.setPreparedStatement(sql);
+            conn.execute();
+        }catch(Exception e){
+            System.out.println(e.getMessage());
+            result = false;
+        }finally {
+            conn.close();
+            return result;
+        }
+    }
+
 
     boolean addDisplayColumnsToDatabase(int taskID){
         boolean result = true;
@@ -195,7 +285,6 @@ public class Task {
             conn.close();
             return result;
         }
-
     }
 
     boolean addResultsTableToDatabase(int taskID){
@@ -218,7 +307,7 @@ public class Task {
                     "`userID` varchar(255) NOT NULL," +
                     "`result` text NOT NULL," +
                     "PRIMARY KEY  (`itemID`,`userID`)" +
-                ") ENGINE=InnoDB DEFAULT CHARSET=utf8;";
+                    ") ENGINE=InnoDB DEFAULT CHARSET=utf8;";
 
             conn.setPreparedStatement(sql);
             conn.execute();
@@ -237,5 +326,9 @@ public class Task {
 
     public static String getResultsTableName(int taskID){
         return "results_" + taskID;
+    }
+
+    public static String getSubTasksTableName(int taskID){
+        return "subtasks_"+ taskID;
     }
 }

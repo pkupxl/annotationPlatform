@@ -10,18 +10,26 @@ public class LabelTaskAppender {
     private static final int DISPLAY_ITEM_PER_PAGE = 100;
     private String userID;
     private int taskID;
+    private int subtaskID;
     private String[][]content;
     private boolean[] hasResults;
     private int currentPageIndex = -1;
     private TaskOperator taskOperator;
     private TaskResultOperator taskResultOperator;
 
-    public LabelTaskAppender(int taskID , String userID){
+    public LabelTaskAppender(int taskID ,int subtaskID, String userID){
         currentPageIndex = -1;
-        taskOperator = new TaskOperator(taskID);
+        taskOperator = new TaskOperator(taskID,subtaskID);
         taskResultOperator = new TaskResultOperator(taskID);
         this.userID = userID;
         this.taskID = taskID;
+        this.subtaskID = subtaskID;
+    }
+    public void Update(int taskID, int subtaskID){
+        this.taskID = taskID;
+        this.subtaskID = subtaskID;
+        currentPageIndex = -1;
+        taskOperator=new TaskOperator(taskID,subtaskID);
     }
 
     private void updateContent(int pageIndex){
@@ -51,7 +59,7 @@ public class LabelTaskAppender {
     }
 
     private String appendAnItemToNavigate(int pageIndex , int index  , String displayString , int dataIndex) {
-        String parameters = "taskID=" + taskID + "&" +"pageIndex=" + pageIndex + "&" + "dataIndex=" + index;
+        String parameters = "taskID=" + taskID + "&subtaskID="+subtaskID+"&" +"pageIndex=" + pageIndex + "&" + "dataIndex=" + index;
         if(index == dataIndex)
             return convert(parameters , displayString , "item-current");
         else if(hasResults[index])
@@ -141,7 +149,7 @@ public class LabelTaskAppender {
                 "<th class='operationSection-index'>" + index + "</th>" +
                 "<th class='operationSection-annotation'>" + annotation + "</th>" +
                 "<th class='operationSection-operation'>" +
-                    "<i class='operation fa fa-minus bg-yellow' onclick='deleteAnnotation(\""+userID+"\" , " + currentPageIndex + " , " + dataIndex + " , \"" + annotation +"\")'></i>" +
+                    "<i class='operation fa fa-minus bg-yellow' onclick='deleteAnnotation(\""+userID+"\" , " + currentPageIndex + " , " + dataIndex + " , \"" + annotation +"\""+" , " + taskID+" , " + subtaskID +")'></i>" +
                 "</th>" +
             "</tr>";
         return result;
@@ -154,7 +162,7 @@ public class LabelTaskAppender {
                     "<input id='addAnnotation' type='text' class='operationSection-input'>" +
                 "</th>" +
                 "<th class='operationSection-operation'>" +
-                    "<i class='operation fa fa-plus bg-yellow' onclick='addAnnotation(\"" + userID + "\" , " + currentPageIndex + " , " + dataIndex + ");'></i>" +
+                    "<i class='operation fa fa-plus bg-yellow' onclick='addAnnotation(\"" + userID + "\" , " + currentPageIndex + " , " + dataIndex + " , " + taskID+" , " + subtaskID +");'></i>" +
                 "</th>" +
             "</tr>";
         return result;

@@ -14,6 +14,8 @@ import java.util.ResourceBundle;
  * Created by oliver on 2017/8/12.
  */
 public class TaskOperator {
+    private String taskID = "";
+    private String subtaskID="";
     private String databaseURL = "";
     private String databaseUser = "";
     private String databasePwd = "";
@@ -21,7 +23,8 @@ public class TaskOperator {
     private String taskDataTable = ""; // the task data resource table
     private String primaryKey = "";
     private int ITEM_COUNT = 10; // the number of rows in the data resource table
-
+    private int subtaskNum = 1;
+    private int totalitemNum = 0;
     private String displayColumns = "";
     // region getter and setter
     public String[] getDisplayColumns (){
@@ -98,7 +101,9 @@ public class TaskOperator {
         }
     }
 
-    public TaskOperator(int taskID){
+    public TaskOperator(int taskID,int subtaskID){
+        this.taskID=Integer.toString(taskID);
+        this.subtaskID=Integer.toString(subtaskID);
         init(taskID);
     }
 
@@ -117,7 +122,7 @@ public class TaskOperator {
         String tasksTable = bundle.getString("tasksTableName");
         SqlConnector conn = new SqlConnector(url , user , pwd , driver);
         try {
-            String sql = "select databaseURL , databaseUser , databasePwd , tableName ,primaryKey from " + tasksTable +" where taskID=" + taskID;
+            String sql = "select databaseURL , databaseUser , databasePwd , tableName ,primaryKey ,itemNum , subtaskNum from " + tasksTable +" where taskID=" + taskID;
             conn.start();
             conn.setPreparedStatement(sql);
             ResultSet rs = conn.executeQuery();
@@ -127,6 +132,8 @@ public class TaskOperator {
                 databasePwd = rs.getString(3);
                 taskDataTable = rs.getString(4);
                 primaryKey = rs.getString(5);
+                totalitemNum =rs.getInt(6);
+                subtaskNum = rs.getInt(7);
             }
         }catch(Exception e){
             System.out.println(e.getMessage());
@@ -165,7 +172,7 @@ public class TaskOperator {
     }
 
     private void initItemCountInfo(){
-        SqlConnector conn = new SqlConnector(databaseURL , databaseUser ,databasePwd ,databaseDriver);
+ /*       SqlConnector conn = new SqlConnector(databaseURL , databaseUser ,databasePwd ,databaseDriver);
         try {
             String sql = "select count(*) from " + taskDataTable;
             conn.start();
@@ -178,6 +185,17 @@ public class TaskOperator {
             System.out.println(e.getMessage());
         }finally{
             conn.close();
+        }*/
+        int temp = totalitemNum/subtaskNum;
+        if(totalitemNum%subtaskNum==0) {
+            ITEM_COUNT=temp;
+        }
+        else{
+            if(Integer.parseInt(subtaskID)<subtaskNum){
+                ITEM_COUNT=temp+1;
+            }else{
+                ITEM_COUNT=totalitemNum-(temp+1)*(subtaskNum-1);
+            }
         }
     }
 
@@ -202,23 +220,43 @@ public class TaskOperator {
         if(isValid()){
             SqlConnector conn = new SqlConnector(databaseURL , databaseUser , databasePwd , databaseDriver);
             String sql =
-                "select * from " +
-                    "(" +
+                    "select * from "+
+                    "("+
+                    "select * from "+
+                    "("+
+                    "select * from " +
+                    "("+
                         "select * from " +
-                        "(" +
+                         "("+
                             "select * from " +
                             "(" +
-                                "select DISPLAY_ITEMS from TASK_TABLE order by PRIMARY_KEY limit END_INDEX " +
-                            ") a order by PRIMARY_KEY desc" +
-                        ") b limit DISPLAY_COUNT " +
-                    ") c order by PRIMARY_KEY asc" ;
+                                "select * from " +
+                                "(" +
+                                    "select * from " +
+                                    "(" +
+                                        "select DISPLAY_ITEMS from TASK_TABLE order by PRIMARY_KEY limit END_INDEX1 " +
+                                    ") a order by PRIMARY_KEY desc" +
+                                ") b limit DISPLAY_COUNT1 " +
+                            ") c order by PRIMARY_KEY asc" +
+                         ") d limit END_INDEX2 " +
+                    ") e order by PRIMARY_KEY desc"+
+                    ") f limit DISPLAY_COUNT2" +
+                    ") g order by PRIMARY_KEY asc";
 
+            int end1;
+            int displayCount1=ITEM_COUNT;
+            if(totalitemNum%subtaskNum==0){
+                end1=totalitemNum/subtaskNum*Integer.parseInt(subtaskID);
+            }else{
+                end1=totalitemNum;
+            }
             int end = ( pageIndex + 1 ) * itemPerPage;
             end = end > ITEM_COUNT ? ITEM_COUNT: end;
             int displayCount = end - pageIndex * itemPerPage;
             if(end > 0 && displayCount > 0) {
                 sql = sql.replace("DISPLAY_ITEMS", displayColumns).replace("TASK_TABLE", taskDataTable);
-                sql = sql.replace("END_INDEX", end + "").replace("DISPLAY_COUNT", displayCount + "");
+                sql = sql.replace("END_INDEX1", end1 + "").replace("DISPLAY_COUNT1", displayCount1 + "");
+                sql = sql.replace("END_INDEX2", end + "").replace("DISPLAY_COUNT2", displayCount + "");
                 sql = sql.replace("PRIMARY_KEY" , primaryKey);
                 try {
                     conn.start();

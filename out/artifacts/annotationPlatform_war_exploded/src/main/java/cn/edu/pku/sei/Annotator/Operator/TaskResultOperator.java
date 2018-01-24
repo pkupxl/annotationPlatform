@@ -27,7 +27,6 @@ public class TaskResultOperator {
         op.deleteAnnotation("1" , "xb" , "test");
         op.deleteAnnotation("2" , "cyk" , "null");
         op.deleteAnnotation("1" , "xb" , "null");*/
-
     }
 
     public TaskResultOperator(int taskID){
@@ -75,6 +74,7 @@ public class TaskResultOperator {
      * @return the changed string , if the oriString contains apiName , and delete apiName successfully
      * 		   null , other.
      */
+
     private String deleteAnnotationFromString(String oriString , String annotation){
         if(oriString == null || annotation == null){
             return null;

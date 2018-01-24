@@ -10,7 +10,6 @@ import java.util.ResourceBundle;
 
 
 public class ItemAnnotator {
-
     public SqlConnector conn;
     public String[] classificationCategory;
     public int[] classificationCategoryCount;
@@ -19,12 +18,10 @@ public class ItemAnnotator {
     private String sqlUser;
     private String sqlPassword;
     private String sqlDrivenName;
-
     private String tableName;
     private List<String> displayElements;
     private String labelColumn;
     private int displayNumber;
-
     private String sql;
 
     //region getter and setter
@@ -38,6 +35,7 @@ public class ItemAnnotator {
     public String getSqlUser(){
         return sqlUser;
     }
+
     public void setSqlUser(String value){
         this.sqlUser = value;
     }
@@ -52,6 +50,7 @@ public class ItemAnnotator {
     public String getSqlDrivenName(){
         return sqlDrivenName;
     }
+
     public void setSqlDrivenName(String value){
         this.sqlDrivenName = value;
     }

@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ page import="cn.edu.pku.sei.pageAppend.SidebarAppender"%>
-
+<%@ page import="cn.edu.pku.sei.pageAppend.LabelTaskBrowserAppender"%>
+<%@ page import="cn.edu.pku.sei.CookieOperations" %>
 
 <!-- saved from url=(0059)https://adminlte.io/themes/AdminLTE/pages/layout/boxed.html -->
 <html class="gr__adminlte_io" style="height: auto; min-height: 100%;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -23,22 +24,25 @@
     <link type="text/css" rel="stylesheet" href="css/_all-skins.min.css">
     <link type="text/css" rel="stylesheet" href="css/test.css">
     <link type="text/css" rel="stylesheet" href="css/userMainPage.css">
+    <link type="text/css" rel="stylesheet" href="css/labelTask.css">
     <link type="text/css" rel="stylesheet" href="css/general.css">
+    <link type="text/css" rel="stylesheet" href="css/labelTaskBrowser.css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <script type="text/javascript" src="js/userMainPage.js"></script>
     <script src="js/sidebarMenuCreator.js"></script>
+    <script type="text/javascript" src="js/labelTaskBrowser.js"></script>
+
     <![endif]-->
 
     <!-- Google Font -->
     <link rel="stylesheet" href="css/css.css">
 </head>
 <!-- ADD THE CLASS layout-boxed TO GET A BOXED LAYOUT -->
-<body class="skin-blue layout-boxed sidebar-mini" data-gr-c-s-loaded="true" style="height: auto; min-height: 100%;">
+<body class="skin-blue sidebar-mini" data-gr-c-s-loaded="true" style="height: auto; min-height: 100%;">
 <!-- Site wrapper -->
 <div class="wrapper" style="overflow: hidden; height: auto; min-height: 100%;">
 
@@ -223,177 +227,6 @@
                 <%
                     out.print(SidebarAppender.sidebarString());
                 %>
-                <!--
-                <li class="header">MAIN NAVIGATION</li>
-                <li class="treeview">
-                    <a href="https://adminlte.io/themes/AdminLTE/pages/layout/boxed.html#">
-                        <i class="fa fa-dashboard"></i> <span>Dashboard</span>
-                        <span class="pull-right-container">
-                            <i class="fa fa-angle-left pull-right"></i>
-                        </span>
-                    </a>
-                    <ul class="treeview-menu">
-                        <li><a href="https://adminlte.io/themes/AdminLTE/index.html"><i class="fa fa-circle-o"></i> Dashboard v1</a></li>
-                        <li><a href="https://adminlte.io/themes/AdminLTE/index2.html"><i class="fa fa-circle-o"></i> Dashboard v2</a></li>
-                    </ul>
-                </li>
-                <li class="treeview active menu-open">
-                    <a href="https://adminlte.io/themes/AdminLTE/pages/layout/boxed.html#">
-                        <i class="fa fa-files-o"></i>
-                        <span>Layout Options</span>
-                        <span class="pull-right-container">
-                            <span class="label label-primary pull-right">4</span>
-                        </span>
-                    </a>
-                    <ul class="treeview-menu">
-                        <li><a href="https://adminlte.io/themes/AdminLTE/pages/layout/top-nav.html"><i class="fa fa-circle-o"></i> Top Navigation</a></li>
-                        <li class="active"><a href="https://adminlte.io/themes/AdminLTE/pages/layout/boxed.html"><i class="fa fa-circle-o"></i> Boxed</a></li>
-                        <li><a href="https://adminlte.io/themes/AdminLTE/pages/layout/fixed.html"><i class="fa fa-circle-o"></i> Fixed</a></li>
-                        <li><a href="https://adminlte.io/themes/AdminLTE/pages/layout/collapsed-sidebar.html"><i class="fa fa-circle-o"></i> Collapsed Sidebar</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="https://adminlte.io/themes/AdminLTE/pages/widgets.html">
-                        <i class="fa fa-th"></i> <span>Widgets</span>
-                        <span class="pull-right-container">
-              <small class="label pull-right bg-green">new</small>
-            </span>
-                    </a>
-                </li>
-                <li class="treeview">
-                    <a href="https://adminlte.io/themes/AdminLTE/pages/layout/boxed.html#">
-                        <i class="fa fa-pie-chart"></i>
-                        <span>Charts</span>
-                        <span class="pull-right-container">
-              <i class="fa fa-angle-left pull-right"></i>
-            </span>
-                    </a>
-                    <ul class="treeview-menu">
-                        <li><a href="https://adminlte.io/themes/AdminLTE/pages/charts/chartjs.html"><i class="fa fa-circle-o"></i> ChartJS</a></li>
-                        <li><a href="https://adminlte.io/themes/AdminLTE/pages/charts/morris.html"><i class="fa fa-circle-o"></i> Morris</a></li>
-                        <li><a href="https://adminlte.io/themes/AdminLTE/pages/charts/flot.html"><i class="fa fa-circle-o"></i> Flot</a></li>
-                        <li><a href="https://adminlte.io/themes/AdminLTE/pages/charts/inline.html"><i class="fa fa-circle-o"></i> Inline charts</a></li>
-                    </ul>
-                </li>
-                <li class="treeview">
-                    <a href="https://adminlte.io/themes/AdminLTE/pages/layout/boxed.html#">
-                        <i class="fa fa-laptop"></i>
-                        <span>UI Elements</span>
-                        <span class="pull-right-container">
-              <i class="fa fa-angle-left pull-right"></i>
-            </span>
-                    </a>
-                    <ul class="treeview-menu">
-                        <li><a href="https://adminlte.io/themes/AdminLTE/pages/UI/general.html"><i class="fa fa-circle-o"></i> General</a></li>
-                        <li><a href="https://adminlte.io/themes/AdminLTE/pages/UI/icons.html"><i class="fa fa-circle-o"></i> Icons</a></li>
-                        <li><a href="https://adminlte.io/themes/AdminLTE/pages/UI/buttons.html"><i class="fa fa-circle-o"></i> Buttons</a></li>
-                        <li><a href="https://adminlte.io/themes/AdminLTE/pages/UI/sliders.html"><i class="fa fa-circle-o"></i> Sliders</a></li>
-                        <li><a href="https://adminlte.io/themes/AdminLTE/pages/UI/timeline.html"><i class="fa fa-circle-o"></i> Timeline</a></li>
-                        <li><a href="https://adminlte.io/themes/AdminLTE/pages/UI/modals.html"><i class="fa fa-circle-o"></i> Modals</a></li>
-                    </ul>
-                </li>
-                <li class="treeview">
-                    <a href="https://adminlte.io/themes/AdminLTE/pages/layout/boxed.html#">
-                        <i class="fa fa-edit"></i> <span>Forms</span>
-                        <span class="pull-right-container">
-              <i class="fa fa-angle-left pull-right"></i>
-            </span>
-                    </a>
-                    <ul class="treeview-menu">
-                        <li><a href="https://adminlte.io/themes/AdminLTE/pages/forms/general.html"><i class="fa fa-circle-o"></i> General Elements</a></li>
-                        <li><a href="https://adminlte.io/themes/AdminLTE/pages/forms/advanced.html"><i class="fa fa-circle-o"></i> Advanced Elements</a></li>
-                        <li><a href="https://adminlte.io/themes/AdminLTE/pages/forms/editors.html"><i class="fa fa-circle-o"></i> Editors</a></li>
-                    </ul>
-                </li>
-                <li class="treeview">
-                    <a href="https://adminlte.io/themes/AdminLTE/pages/layout/boxed.html#">
-                        <i class="fa fa-table"></i> <span>Tables</span>
-                        <span class="pull-right-container">
-              <i class="fa fa-angle-left pull-right"></i>
-            </span>
-                    </a>
-                    <ul class="treeview-menu">
-                        <li><a href="https://adminlte.io/themes/AdminLTE/pages/tables/simple.html"><i class="fa fa-circle-o"></i> Simple tables</a></li>
-                        <li><a href="https://adminlte.io/themes/AdminLTE/pages/tables/data.html"><i class="fa fa-circle-o"></i> Data tables</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="https://adminlte.io/themes/AdminLTE/pages/calendar.html">
-                        <i class="fa fa-calendar"></i> <span>Calendar</span>
-                        <span class="pull-right-container">
-              <small class="label pull-right bg-red">3</small>
-              <small class="label pull-right bg-blue">17</small>
-            </span>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://adminlte.io/themes/AdminLTE/pages/mailbox/mailbox.html">
-                        <i class="fa fa-envelope"></i> <span>Mailbox</span>
-                        <span class="pull-right-container">
-              <small class="label pull-right bg-yellow">12</small>
-              <small class="label pull-right bg-green">16</small>
-              <small class="label pull-right bg-red">5</small>
-            </span>
-                    </a>
-                </li>
-                <li class="treeview">
-                    <a href="https://adminlte.io/themes/AdminLTE/pages/layout/boxed.html#">
-                        <i class="fa fa-folder"></i> <span>Examples</span>
-                        <span class="pull-right-container">
-              <i class="fa fa-angle-left pull-right"></i>
-            </span>
-                    </a>
-                    <ul class="treeview-menu">
-                        <li><a href="https://adminlte.io/themes/AdminLTE/pages/examples/invoice.html"><i class="fa fa-circle-o"></i> Invoice</a></li>
-                        <li><a href="https://adminlte.io/themes/AdminLTE/pages/examples/profile.html"><i class="fa fa-circle-o"></i> Profile</a></li>
-                        <li><a href="https://adminlte.io/themes/AdminLTE/pages/examples/login.html"><i class="fa fa-circle-o"></i> Login</a></li>
-                        <li><a href="https://adminlte.io/themes/AdminLTE/pages/examples/register.html"><i class="fa fa-circle-o"></i> Register</a></li>
-                        <li><a href="https://adminlte.io/themes/AdminLTE/pages/examples/lockscreen.html"><i class="fa fa-circle-o"></i> Lockscreen</a></li>
-                        <li><a href="https://adminlte.io/themes/AdminLTE/pages/examples/404.html"><i class="fa fa-circle-o"></i> 404 Error</a></li>
-                        <li><a href="https://adminlte.io/themes/AdminLTE/pages/examples/500.html"><i class="fa fa-circle-o"></i> 500 Error</a></li>
-                        <li><a href="https://adminlte.io/themes/AdminLTE/pages/examples/blank.html"><i class="fa fa-circle-o"></i> Blank Page</a></li>
-                        <li><a href="https://adminlte.io/themes/AdminLTE/pages/examples/pace.html"><i class="fa fa-circle-o"></i> Pace Page</a></li>
-                    </ul>
-                </li>
-                <li class="treeview">
-                    <a href="https://adminlte.io/themes/AdminLTE/pages/layout/boxed.html#">
-                        <i class="fa fa-share"></i> <span>Multilevel</span>
-                        <span class="pull-right-container">
-              <i class="fa fa-angle-left pull-right"></i>
-            </span>
-                    </a>
-                    <ul class="treeview-menu">
-                        <li><a href="https://adminlte.io/themes/AdminLTE/pages/layout/boxed.html#"><i class="fa fa-circle-o"></i> Level One</a></li>
-                        <li class="treeview">
-                            <a href="https://adminlte.io/themes/AdminLTE/pages/layout/boxed.html#"><i class="fa fa-circle-o"></i> Level One
-                                <span class="pull-right-container">
-                  <i class="fa fa-angle-left pull-right"></i>
-                </span>
-                            </a>
-                            <ul class="treeview-menu">
-                                <li><a href="https://adminlte.io/themes/AdminLTE/pages/layout/boxed.html#"><i class="fa fa-circle-o"></i> Level Two</a></li>
-                                <li class="treeview">
-                                    <a href="https://adminlte.io/themes/AdminLTE/pages/layout/boxed.html#"><i class="fa fa-circle-o"></i> Level Two
-                                        <span class="pull-right-container">
-                      <i class="fa fa-angle-left pull-right"></i>
-                    </span>
-                                    </a>
-                                    <ul class="treeview-menu">
-                                        <li><a href="https://adminlte.io/themes/AdminLTE/pages/layout/boxed.html#"><i class="fa fa-circle-o"></i> Level Three</a></li>
-                                        <li><a href="https://adminlte.io/themes/AdminLTE/pages/layout/boxed.html#"><i class="fa fa-circle-o"></i> Level Three</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <li><a href="https://adminlte.io/themes/AdminLTE/pages/layout/boxed.html#"><i class="fa fa-circle-o"></i> Level One</a></li>
-                    </ul>
-                </li>
-                <li><a href="https://adminlte.io/docs"><i class="fa fa-book"></i> <span>Documentation</span></a></li>
-                <li class="header">LABELS</li>
-                <li><a href="https://adminlte.io/themes/AdminLTE/pages/layout/boxed.html#"><i class="fa fa-circle-o text-red"></i> <span>Important</span></a></li>
-                <li><a href="https://adminlte.io/themes/AdminLTE/pages/layout/boxed.html#"><i class="fa fa-circle-o text-yellow"></i> <span>Warning</span></a></li>
-                <li><a href="https://adminlte.io/themes/AdminLTE/pages/layout/boxed.html#"><i class="fa fa-circle-o text-aqua"></i> <span>Information</span></a></li>
-            -->
             </ul>
 
         </section>
@@ -403,144 +236,52 @@
     <!-- =============================================== -->
 
     <!-- Content Wrapper. Contains page content -->
+
+
+
     <div class="content-wrapper" style="min-height: 976px;">
         <!-- Content Header (Page header) -->
         <section class="content-header">
             <h1>
-                Boxed Layout
+                标注任务
                 <small>Blank example to the boxed layout</small>
             </h1>
-            <ol class="breadcrumb">
-                <li><a href="https://adminlte.io/themes/AdminLTE/pages/layout/boxed.html#"><i class="fa fa-dashboard"></i> Home</a></li>
-                <li><a href="https://adminlte.io/themes/AdminLTE/pages/layout/boxed.html#">Layout</a></li>
-                <li class="active">Boxed</li>
-            </ol>
         </section>
 
         <!-- Main content -->
         <section class="content">
+            <div class="browser-section box">
+                <div class="box-header with-border" >
+                    <a href="mylabelTaskBrowser.jsp">我的标注任务</a>
+                </div>
+                <div class="box-body">
+                    <ul id="taskBroswer" class="tree" data-widget="tree">
+                    <%
+                            int index;
+                            try{
+                                index = Integer.parseInt(request.getParameter("index"));
+                            }catch(Exception e){
+                                index = 0;
+                            }
+                            String userID = CookieOperations.getCookieValue(request , "userID");
+                            System.out.println(userID);
+                            out.print(LabelTaskBrowserAppender.getMyAnnotateBrowserAppendString(index,userID));
+                    %>
+                    </ul>
+                </div>
 
-            <ul class="timeline" id="timeline">
-
-                <li id="database" >
-                    <i class="fa fa-envelope bg-blue"></i>
-                    <div class="timeline-item">
-                        <h3 class="timeline-header">选择数据库</h3>
-                        <div class="timeline-body">
-                            <form class="form-horizontal" role="form">
-                                <!--  数据库地址  -->
-                                <div class="form-group">
-                                    <label for="database_url" class="col-md-4 control-label">Database URL</label>
-                                    <div class="col-md-6">
-                                        <input id="database_url" type="text" class="form-control" name="database_url" placeholder="127.0.0.1" value="127.0.0.1">
-                                    </div>
-                                </div>
-                                <!--  数据库端口  -->
-                                <div class="form-group">
-                                    <label for="database_port" class="col-md-4 control-label">Database Port</label>
-                                    <div class="col-md-6">
-                                        <input id="database_port" type="text" class="form-control" name="database_port" placeholder="3306" value="3306">
-                                    </div>
-                                </div>
-                                <!--  数据库名称  -->
-                                <div class="form-group">
-                                    <label for="database_database" class="col-md-4 control-label">Database</label>
-                                    <div class="col-md-6">
-                                        <input id="database_database" type="text" class="form-control" name="database_group" placeholder="stackoverflow" value="stackoverflow">
-                                    </div>
-                                </div>
-                                <!--  数据库用户  -->
-                                <div class="form-group">
-                                    <label for="database_user" class="col-md-4 control-label">Database User</label>
-                                    <div class="col-md-6">
-                                        <input id="database_user" type="text" class="form-control" name="database_user" placeholder="root" value="root">
-                                    </div>
-                                </div>
-                                <!--  数据库密码  -->
-                                <div class="form-group">
-                                    <label for="database_pwd" class="col-md-4 control-label">Database Password</label>
-                                    <div class="col-md-6">
-                                        <input id="database_pwd" type="password" class="form-control" name="database_pwd" placeholder="" >
-                                    </div>
-                                </div>
-                                <div class="form-group" style="text-align:center" align="center">
-                                    <a type="btn btn-block btn-info btn-lg" onclick="getTablesInfo();">CONNECT</a>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </li>
-
-
-                <li id="tableSelector" style="opacity:0">
-                    <i class="fa fa-database bg-blue"></i>
-                    <div class="timeline-item">
-                        <h3 class="timeline-header">选择表格</h3>
-                        <div class="timeline-body">
-                            <form class="form-horizontal" role="form">
-                                <div class="form-group">
-                                    <label class="col-md-2 control-label" for="tableOptions" style="heigth:30px">选择表格</label>
-                                    <div class="col-md-6">
-                                        <select id="tableOptions" name="tableOptions" style="height:30px; width:150px" onchange="getColumnsInfo();">
-                                            <option value="default">default</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <!-- 选择要显示的内容-->
-                                <div class="form-group">
-                                    <label class="col-md-2 control-label">选择要显示的数据</label>
-                                    <div class="col-md-6">
-                                        <div class="col-md-12">
-                                            <table class="table table-bordered" rowNum="">
-                                                <tbody id="displayElements">
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                        <div class="col-md-12">
-                                            <table class="table table-bordered">
-                                                <tbody id="displayCandidate">
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="form-group" align="center">
-                                    <a type="btn btn-block btn-info btn-lg" onclick="createTask();">建立</a>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </li>
-                <!--
-                <li>
-                    <i class="fa fa-envelope bg-blue"></i>
-                    <div class="timeline-item">
-                        <span class="time"><i class="fa fa-clock-o"></i> 12:05</span>
-
-                        <h3 class="timeline-header"><a href="#">Support Team</a> ...</h3>
-
-                        <div class="timeline-body">
-                            ...
-                            Content goes here
-                        </div>
-
-                        <div class="timeline-footer">
-                            <a class="btn btn-primary btn-xs">...</a>
-                        </div>
-                    </div>
-                </li>
-                -->
-                <!-- END timeline item -->
-            </ul>
+                <div class="box-footer clearfix">
+                    <ul id="taskBrowserFooter" class="pagination pagination-sm no-margin pull-right">
+                    <%
+                           out.print(LabelTaskBrowserAppender.getMyAnnotateBrowserFooterAppendString());
+                    %>
+                    </ul>
+                </div>
+            </div>
         </section>
         <!-- /.content -->
     </div>
     <!-- /.content-wrapper -->
-
-
-
-
-
 
     <footer class="main-footer">
         <div class="pull-right hidden-xs">
@@ -759,4 +500,6 @@
 <!-- AdminLTE for demo purposes -->
 <script src="js/demo.js"></script>
 <script src="js/userMainPage.js"></script>
+<script src="js/labelTaskBrowser.js"></script>
+
 </body></html>

@@ -48,4 +48,14 @@
         <url-pattern>/LabelTask</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <description></description>
+        <display-name>SubTask</display-name>
+        <servlet-name>SubTask</servlet-name>
+        <servlet-class>cn.edu.pku.sei.servlet.SubTaskServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SubTask</servlet-name>
+        <url-pattern>/SubTask</url-pattern>
+    </servlet-mapping>
 </web-app>

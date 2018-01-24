@@ -6,69 +6,60 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e3383d65-2f7e-43a8-bc93-490ae67a7147" name="Default" comment="annotationplatform">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/annotationPlatform_war_exploded/mylabelTaskBrowser.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/annotationPlatform_war_exploded/web/mylabelTaskBrowser.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/mylabelTaskBrowser.jsp" />
+    <list default="true" id="e3383d65-2f7e-43a8-bc93-490ae67a7147" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/annotationPlatform_war_exploded/WEB-INF/classes/cn/edu/pku/sei/Annotator/ItemAnnotator.class" afterPath="$PROJECT_DIR$/out/artifacts/annotationPlatform_war_exploded/WEB-INF/classes/cn/edu/pku/sei/Annotator/ItemAnnotator.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/annotationPlatform_war_exploded/WEB-INF/classes/cn/edu/pku/sei/Annotator/Operator/TaskOperator.class" afterPath="$PROJECT_DIR$/out/artifacts/annotationPlatform_war_exploded/WEB-INF/classes/cn/edu/pku/sei/Annotator/Operator/TaskOperator.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/annotationPlatform_war_exploded/WEB-INF/classes/cn/edu/pku/sei/Annotator/Operator/TaskResultOperator.class" afterPath="$PROJECT_DIR$/out/artifacts/annotationPlatform_war_exploded/WEB-INF/classes/cn/edu/pku/sei/Annotator/Operator/TaskResultOperator.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/annotationPlatform_war_exploded/WEB-INF/classes/cn/edu/pku/sei/Database/DatabaseBrowser.class" afterPath="$PROJECT_DIR$/out/artifacts/annotationPlatform_war_exploded/WEB-INF/classes/cn/edu/pku/sei/Database/DatabaseBrowser.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/annotationPlatform_war_exploded/WEB-INF/classes/cn/edu/pku/sei/Annotator/PageParameter.class" afterPath="$PROJECT_DIR$/out/artifacts/annotationPlatform_war_exploded/WEB-INF/classes/cn/edu/pku/sei/Annotator/PageParameter.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/annotationPlatform_war_exploded/WEB-INF/classes/cn/edu/pku/sei/LabelTask/Task.class" afterPath="$PROJECT_DIR$/out/artifacts/annotationPlatform_war_exploded/WEB-INF/classes/cn/edu/pku/sei/LabelTask/Task.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/annotationPlatform_war_exploded/WEB-INF/classes/cn/edu/pku/sei/pageAppend/LabelItemNavigatorAppender.class" afterPath="$PROJECT_DIR$/out/artifacts/annotationPlatform_war_exploded/WEB-INF/classes/cn/edu/pku/sei/pageAppend/LabelItemNavigatorAppender.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/annotationPlatform_war_exploded/WEB-INF/classes/cn/edu/pku/sei/pageAppend/LabelTaskAppender.class" afterPath="$PROJECT_DIR$/out/artifacts/annotationPlatform_war_exploded/WEB-INF/classes/cn/edu/pku/sei/pageAppend/LabelTaskAppender.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/annotationPlatform_war_exploded/WEB-INF/classes/cn/edu/pku/sei/pageAppend/LabelTaskBrowserAppender.class" afterPath="$PROJECT_DIR$/out/artifacts/annotationPlatform_war_exploded/WEB-INF/classes/cn/edu/pku/sei/pageAppend/LabelTaskBrowserAppender.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/annotationPlatform_war_exploded/WEB-INF/classes/cn/edu/pku/sei/pageAppend/SidebarAppender.class" afterPath="$PROJECT_DIR$/out/artifacts/annotationPlatform_war_exploded/WEB-INF/classes/cn/edu/pku/sei/pageAppend/SidebarAppender.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/annotationPlatform_war_exploded/WEB-INF/classes/cn/edu/pku/sei/servlet/ConstructLabelTaskServlet.class" afterPath="$PROJECT_DIR$/out/artifacts/annotationPlatform_war_exploded/WEB-INF/classes/cn/edu/pku/sei/servlet/ConstructLabelTaskServlet.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/annotationPlatform_war_exploded/WEB-INF/classes/cn/edu/pku/sei/servlet/LabelTaskServlet.class" afterPath="$PROJECT_DIR$/out/artifacts/annotationPlatform_war_exploded/WEB-INF/classes/cn/edu/pku/sei/servlet/LabelTaskServlet.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/annotationPlatform_war_exploded/WEB-INF/classes/cn/edu/pku/sei/servlet/UserLoginServlet.class" afterPath="$PROJECT_DIR$/out/artifacts/annotationPlatform_war_exploded/WEB-INF/classes/cn/edu/pku/sei/servlet/UserLoginServlet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Resources/database.properties" afterPath="$PROJECT_DIR$/Resources/database.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/annotationPlatform_war_exploded/.idea/misc.xml" afterPath="$PROJECT_DIR$/out/artifacts/annotationPlatform_war_exploded/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/annotationPlatform_war_exploded/.idea/workspace.xml" afterPath="$PROJECT_DIR$/out/artifacts/annotationPlatform_war_exploded/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/annotationPlatform_war_exploded/index.jsp" afterPath="$PROJECT_DIR$/out/artifacts/annotationPlatform_war_exploded/index.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/annotationPlatform_war_exploded/Resources/database.properties" afterPath="$PROJECT_DIR$/out/artifacts/annotationPlatform_war_exploded/Resources/database.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/annotationPlatform_war_exploded/WEB-INF/classes/database.properties" afterPath="$PROJECT_DIR$/out/artifacts/annotationPlatform_war_exploded/WEB-INF/classes/database.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/annotationPlatform_war_exploded/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/out/artifacts/annotationPlatform_war_exploded/WEB-INF/web.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/annotationPlatform_war_exploded/js/labelTask.js" afterPath="$PROJECT_DIR$/out/artifacts/annotationPlatform_war_exploded/js/labelTask.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/annotationPlatform_war_exploded/js/userMainPage.js" afterPath="$PROJECT_DIR$/out/artifacts/annotationPlatform_war_exploded/js/userMainPage.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/annotationPlatform_war_exploded/labelTask.jsp" afterPath="$PROJECT_DIR$/out/artifacts/annotationPlatform_war_exploded/labelTask.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/annotationPlatform_war_exploded/labelTaskBrowser.jsp" afterPath="$PROJECT_DIR$/out/artifacts/annotationPlatform_war_exploded/labelTaskBrowser.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/annotationPlatform_war_exploded/mylabelTaskBrowser.jsp" afterPath="$PROJECT_DIR$/out/artifacts/annotationPlatform_war_exploded/mylabelTaskBrowser.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/annotationPlatform_war_exploded/src/main/java/cn/edu/pku/sei/Annotator/ItemAnnotator.java" afterPath="$PROJECT_DIR$/out/artifacts/annotationPlatform_war_exploded/src/main/java/cn/edu/pku/sei/Annotator/ItemAnnotator.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/annotationPlatform_war_exploded/src/main/java/cn/edu/pku/sei/Annotator/Operator/TaskOperator.java" afterPath="$PROJECT_DIR$/out/artifacts/annotationPlatform_war_exploded/src/main/java/cn/edu/pku/sei/Annotator/Operator/TaskOperator.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/annotationPlatform_war_exploded/src/main/java/cn/edu/pku/sei/Annotator/Operator/TaskResultOperator.java" afterPath="$PROJECT_DIR$/out/artifacts/annotationPlatform_war_exploded/src/main/java/cn/edu/pku/sei/Annotator/Operator/TaskResultOperator.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/annotationPlatform_war_exploded/src/main/java/cn/edu/pku/sei/Annotator/PageParameter.java" afterPath="$PROJECT_DIR$/out/artifacts/annotationPlatform_war_exploded/src/main/java/cn/edu/pku/sei/Annotator/PageParameter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/annotationPlatform_war_exploded/src/main/java/cn/edu/pku/sei/Database/DatabaseBrowser.java" afterPath="$PROJECT_DIR$/out/artifacts/annotationPlatform_war_exploded/src/main/java/cn/edu/pku/sei/Database/DatabaseBrowser.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/annotationPlatform_war_exploded/src/main/java/cn/edu/pku/sei/LabelTask/Task.java" afterPath="$PROJECT_DIR$/out/artifacts/annotationPlatform_war_exploded/src/main/java/cn/edu/pku/sei/LabelTask/Task.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/annotationPlatform_war_exploded/src/main/java/cn/edu/pku/sei/configuration/URL.java" afterPath="$PROJECT_DIR$/out/artifacts/annotationPlatform_war_exploded/src/main/java/cn/edu/pku/sei/configuration/URL.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/annotationPlatform_war_exploded/src/main/java/cn/edu/pku/sei/pageAppend/LabelItemNavigatorAppender.java" afterPath="$PROJECT_DIR$/out/artifacts/annotationPlatform_war_exploded/src/main/java/cn/edu/pku/sei/pageAppend/LabelItemNavigatorAppender.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/annotationPlatform_war_exploded/src/main/java/cn/edu/pku/sei/pageAppend/LabelTaskAppender.java" afterPath="$PROJECT_DIR$/out/artifacts/annotationPlatform_war_exploded/src/main/java/cn/edu/pku/sei/pageAppend/LabelTaskAppender.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/annotationPlatform_war_exploded/src/main/java/cn/edu/pku/sei/pageAppend/LabelTaskBrowserAppender.java" afterPath="$PROJECT_DIR$/out/artifacts/annotationPlatform_war_exploded/src/main/java/cn/edu/pku/sei/pageAppend/LabelTaskBrowserAppender.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/annotationPlatform_war_exploded/src/main/java/cn/edu/pku/sei/pageAppend/SidebarAppender.java" afterPath="$PROJECT_DIR$/out/artifacts/annotationPlatform_war_exploded/src/main/java/cn/edu/pku/sei/pageAppend/SidebarAppender.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/annotationPlatform_war_exploded/src/main/java/cn/edu/pku/sei/servlet/ConstructLabelTaskServlet.java" afterPath="$PROJECT_DIR$/out/artifacts/annotationPlatform_war_exploded/src/main/java/cn/edu/pku/sei/servlet/ConstructLabelTaskServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/annotationPlatform_war_exploded/src/main/java/cn/edu/pku/sei/servlet/DatabaseBrowserServlet.java" afterPath="$PROJECT_DIR$/out/artifacts/annotationPlatform_war_exploded/src/main/java/cn/edu/pku/sei/servlet/DatabaseBrowserServlet.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/annotationPlatform_war_exploded/src/main/java/cn/edu/pku/sei/servlet/LabelTaskServlet.java" afterPath="$PROJECT_DIR$/out/artifacts/annotationPlatform_war_exploded/src/main/java/cn/edu/pku/sei/servlet/LabelTaskServlet.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/annotationPlatform_war_exploded/src/main/java/cn/edu/pku/sei/servlet/UserLoginServlet.java" afterPath="$PROJECT_DIR$/out/artifacts/annotationPlatform_war_exploded/src/main/java/cn/edu/pku/sei/servlet/UserLoginServlet.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/annotationPlatform_war_exploded/userMainPage.jsp" afterPath="$PROJECT_DIR$/out/artifacts/annotationPlatform_war_exploded/userMainPage.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/annotationPlatform_war_exploded/web/index.jsp" afterPath="$PROJECT_DIR$/out/artifacts/annotationPlatform_war_exploded/web/index.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/annotationPlatform_war_exploded/web/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/out/artifacts/annotationPlatform_war_exploded/web/WEB-INF/web.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/annotationPlatform_war_exploded/web/js/labelTask.js" afterPath="$PROJECT_DIR$/out/artifacts/annotationPlatform_war_exploded/web/js/labelTask.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/annotationPlatform_war_exploded/web/js/userMainPage.js" afterPath="$PROJECT_DIR$/out/artifacts/annotationPlatform_war_exploded/web/js/userMainPage.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/annotationPlatform_war_exploded/web/labelTask.jsp" afterPath="$PROJECT_DIR$/out/artifacts/annotationPlatform_war_exploded/web/labelTask.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/annotationPlatform_war_exploded/web/labelTaskBrowser.jsp" afterPath="$PROJECT_DIR$/out/artifacts/annotationPlatform_war_exploded/web/labelTaskBrowser.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/annotationPlatform_war_exploded/web/mylabelTaskBrowser.jsp" afterPath="$PROJECT_DIR$/out/artifacts/annotationPlatform_war_exploded/web/mylabelTaskBrowser.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/annotationPlatform_war_exploded/web/userMainPage.jsp" afterPath="$PROJECT_DIR$/out/artifacts/annotationPlatform_war_exploded/web/userMainPage.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/cn/edu/pku/sei/Annotator/ItemAnnotator.java" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/pku/sei/Annotator/ItemAnnotator.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/cn/edu/pku/sei/Annotator/Operator/TaskOperator.java" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/pku/sei/Annotator/Operator/TaskOperator.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/cn/edu/pku/sei/Annotator/Operator/TaskResultOperator.java" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/pku/sei/Annotator/Operator/TaskResultOperator.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/cn/edu/pku/sei/Annotator/PageParameter.java" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/pku/sei/Annotator/PageParameter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/cn/edu/pku/sei/Database/DatabaseBrowser.java" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/pku/sei/Database/DatabaseBrowser.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/cn/edu/pku/sei/LabelTask/Task.java" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/pku/sei/LabelTask/Task.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/cn/edu/pku/sei/configuration/URL.java" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/pku/sei/configuration/URL.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/cn/edu/pku/sei/pageAppend/LabelItemNavigatorAppender.java" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/pku/sei/pageAppend/LabelItemNavigatorAppender.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/cn/edu/pku/sei/pageAppend/LabelTaskAppender.java" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/pku/sei/pageAppend/LabelTaskAppender.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/cn/edu/pku/sei/pageAppend/LabelTaskBrowserAppender.java" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/pku/sei/pageAppend/LabelTaskBrowserAppender.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/cn/edu/pku/sei/pageAppend/SidebarAppender.java" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/pku/sei/pageAppend/SidebarAppender.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/cn/edu/pku/sei/servlet/ConstructLabelTaskServlet.java" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/pku/sei/servlet/ConstructLabelTaskServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/cn/edu/pku/sei/servlet/DatabaseBrowserServlet.java" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/pku/sei/servlet/DatabaseBrowserServlet.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/cn/edu/pku/sei/servlet/LabelTaskServlet.java" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/pku/sei/servlet/LabelTaskServlet.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/cn/edu/pku/sei/servlet/UserLoginServlet.java" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/pku/sei/servlet/UserLoginServlet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/labelTask.js" afterPath="$PROJECT_DIR$/web/js/labelTask.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/userMainPage.js" afterPath="$PROJECT_DIR$/web/js/userMainPage.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/labelTask.jsp" afterPath="$PROJECT_DIR$/web/labelTask.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/labelTaskBrowser.jsp" afterPath="$PROJECT_DIR$/web/labelTaskBrowser.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/mylabelTaskBrowser.jsp" afterPath="$PROJECT_DIR$/web/mylabelTaskBrowser.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/userMainPage.jsp" afterPath="$PROJECT_DIR$/web/userMainPage.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
@@ -78,6 +69,9 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/annotationPlatform$index_jsp.coverage" NAME="index.jsp Coverage Results" MODIFIED="1516416789885" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -90,27 +84,44 @@
     <expand />
     <select />
   </component>
+  <component name="ErrorTreeViewConfiguration">
+    <option name="hideWarnings" value="true" />
+    <option name="HIDE_WARNINGS" value="true" />
+  </component>
   <component name="FavoritesManager">
     <favorites_list name="annotationPlatform" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="userMainPage.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/userMainPage.jsp">
+      <file leaf-file-name="SubTaskServlet.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/pku/sei/servlet/SubTaskServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="515">
-              <caret line="509" column="92" lean-forward="false" selection-start-line="509" selection-start-column="92" selection-end-line="509" selection-end-column="92" />
+            <state relative-caret-position="1386">
+              <caret line="79" column="21" lean-forward="false" selection-start-line="79" selection-start-column="21" selection-end-line="79" selection-end-column="21" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="userMainPage.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/js/userMainPage.js">
+      <file leaf-file-name="LabelTaskBrowserAppender.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/pku/sei/pageAppend/LabelTaskBrowserAppender.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="21">
-              <caret line="225" column="18" lean-forward="false" selection-start-line="225" selection-start-column="18" selection-end-line="225" selection-end-column="18" />
+            <state relative-caret-position="5187">
+              <caret line="256" column="5" lean-forward="false" selection-start-line="256" selection-start-column="5" selection-end-line="256" selection-end-column="5" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SidebarAppender.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/pku/sei/pageAppend/SidebarAppender.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="126">
+              <caret line="6" column="35" lean-forward="false" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
+              <folding>
+                <element signature="e#164#165#0" expanded="true" />
+                <element signature="e#189#190#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -118,58 +129,40 @@
       <file leaf-file-name="LabelTaskAppender.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/pku/sei/pageAppend/LabelTaskAppender.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="539">
-              <caret line="71" column="18" lean-forward="false" selection-start-line="71" selection-start-column="18" selection-end-line="71" selection-end-column="18" />
+            <state relative-caret-position="1533">
+              <caret line="74" column="0" lean-forward="false" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TaskOperator.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/pku/sei/Annotator/Operator/TaskOperator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3486">
+              <caret line="267" column="0" lean-forward="false" selection-start-line="267" selection-start-column="0" selection-end-line="268" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="labelTaskBrowser.jsp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web/labelTaskBrowser.jsp">
+      <file leaf-file-name="myAnnotateTaskBrowser.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/myAnnotateTaskBrowser.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="466" column="26" lean-forward="true" selection-start-line="466" selection-start-column="26" selection-end-line="466" selection-end-column="26" />
+            <state relative-caret-position="5607">
+              <caret line="267" column="77" lean-forward="false" selection-start-line="267" selection-start-column="77" selection-end-line="267" selection-end-column="77" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ConstructLabelTaskServlet.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/pku/sei/servlet/ConstructLabelTaskServlet.java">
+      <file leaf-file-name="labelTask.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/labelTask.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="57" column="10" lean-forward="false" selection-start-line="57" selection-start-column="10" selection-end-line="57" selection-end-column="10" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Task.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/pku/sei/LabelTask/Task.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1176">
-              <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DatabaseBrowserServlet.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/pku/sei/servlet/DatabaseBrowserServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1176">
-              <caret line="67" column="40" lean-forward="false" selection-start-line="67" selection-start-column="40" selection-end-line="67" selection-end-column="40" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DatabaseBrowser.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/pku/sei/Database/DatabaseBrowser.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2205">
-              <caret line="123" column="54" lean-forward="false" selection-start-line="123" selection-start-column="54" selection-end-line="123" selection-end-column="54" />
+            <state relative-caret-position="5943">
+              <caret line="283" column="57" lean-forward="false" selection-start-line="283" selection-start-column="57" selection-end-line="283" selection-end-column="57" />
               <folding />
             </state>
           </provider>
@@ -181,6 +174,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="JavaScript File" />
+        <option value="Class" />
         <option value="Jsp File" />
       </list>
     </option>
@@ -196,10 +191,16 @@
       <find>SidebarAppender</find>
       <find>index</find>
       <find>taskBrowserFooterAppendString</find>
+      <find>getOperationSectionAppendString</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubProjectSettings">
+    <option name="CREATE_PULL_REQUEST_DEFAULT_BRANCH" value="master" />
+    <option name="CREATE_PULL_REQUEST_DEFAULT_REPO_USER" value="pkupxl" />
+    <option name="CREATE_PULL_REQUEST_DEFAULT_REPO_NAME" value="annotationPlatform" />
   </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
@@ -210,35 +211,39 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/Resources/database.properties" />
         <option value="$PROJECT_DIR$/web/WEB-INF/login.html" />
         <option value="$PROJECT_DIR$/web/WEB-INF/register.jsp" />
         <option value="$PROJECT_DIR$/out/artifacts/annotationPlatform_war_exploded/annotationPlatform.iml" />
         <option value="$PROJECT_DIR$/web/register.jsp" />
         <option value="$PROJECT_DIR$/web/js/index.js" />
-        <option value="$PROJECT_DIR$/web/userMainPage.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/cn/edu/pku/sei/Annotator/Operator/TaskResultOperator.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cn/edu/pku/sei/LabelTask/Task.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/edu/pku/sei/configuration/URL.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cn/edu/pku/sei/servlet/UserLoginServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/edu/pku/sei/pageAppend/LabelItemNavigatorAppender.java" />
         <option value="$PROJECT_DIR$/web/js/userMainPage.js" />
         <option value="$PROJECT_DIR$/web/WEB-INF/mylabelTaskBrowser.jsp" />
-        <option value="$PROJECT_DIR$/web/labelTaskBrowser.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/cn/edu/pku/sei/servlet/ConstructLabelTaskServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cn/edu/pku/sei/pageAppend/LabelTaskBrowserAppender.java" />
+        <option value="$PROJECT_DIR$/web/index.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/edu/pku/sei/servlet/DatabaseBrowserServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/edu/pku/sei/Database/DatabaseBrowser.java" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/edu/pku/sei/servlet/LabelTaskServlet.java" />
+        <option value="$PROJECT_DIR$/web/labelTaskBrowser.jsp" />
         <option value="$PROJECT_DIR$/web/mylabelTaskBrowser.jsp" />
+        <option value="$PROJECT_DIR$/web/js/labelTaskBrowser.js" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/edu/pku/sei/Annotator/Operator/TaskResultOperator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/edu/pku/sei/Annotator/ItemAnnotator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/edu/pku/sei/Annotator/PageParameter.java" />
+        <option value="$PROJECT_DIR$/Resources/database.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/edu/pku/sei/servlet/UserLoginServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/edu/pku/sei/LabelTask/Task.java" />
+        <option value="$PROJECT_DIR$/web/userMainPage.jsp" />
+        <option value="$PROJECT_DIR$/web/myAnnotateTaskBrowser.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/edu/pku/sei/pageAppend/SidebarAppender.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/edu/pku/sei/pageAppend/LabelTaskBrowserAppender.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/edu/pku/sei/Annotator/Operator/TaskOperator.java" />
+        <option value="$PROJECT_DIR$/web/labelTask.jsp" />
         <option value="$PROJECT_DIR$/web/js/labelTask.js" />
         <option value="$PROJECT_DIR$/src/main/java/cn/edu/pku/sei/pageAppend/LabelTaskAppender.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cn/edu/pku/sei/servlet/LabelTaskServlet.java" />
-        <option value="$PROJECT_DIR$/web/labelTask.jsp" />
-        <option value="$PROJECT_DIR$/web/index.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/cn/edu/pku/sei/Annotator/Operator/TaskOperator.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cn/edu/pku/sei/Annotator/PageParameter.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cn/edu/pku/sei/Annotator/ItemAnnotator.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cn/edu/pku/sei/servlet/DatabaseBrowserServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cn/edu/pku/sei/pageAppend/SidebarAppender.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cn/edu/pku/sei/Database/DatabaseBrowser.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/edu/pku/sei/servlet/SubTaskServlet.java" />
       </list>
     </option>
   </component>
@@ -274,10 +279,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="442" />
-    <option name="y" value="54" />
-    <option name="width" value="764" />
-    <option name="height" value="632" />
+    <option name="x" value="290" />
+    <option name="y" value="30" />
+    <option name="width" value="997" />
+    <option name="height" value="596" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -297,8 +302,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="AndroidView" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -363,6 +368,24 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="sei" type="462c0819:PsiDirectoryNode" />
+              <item name="configuration" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="annotationPlatform" type="b2602c69:ProjectViewProjectNode" />
+              <item name="annotationPlatform" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="sei" type="462c0819:PsiDirectoryNode" />
+              <item name="Database" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="annotationPlatform" type="b2602c69:ProjectViewProjectNode" />
+              <item name="annotationPlatform" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="sei" type="462c0819:PsiDirectoryNode" />
               <item name="LabelTask" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -411,18 +434,18 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.3076037" />
-    <property name="settings.editor.selected.configurable" value="settings.github" />
-    <property name="SearchEverywhereHistoryKey" value="order by  limit 100 ) a order by  desc) b limit 100 ) c&#9;null&#9;null&#10;addAnnotation&#9;PSI&#9;JAVA://cn.edu.pku.sei.Annotator.Operator.TaskResultOperator#addAnnotationIntoString&#10;Annotation&#9;FILE&#9;file://E:/idea workspace/annotationPlatform/out/artifacts/annotationPlatform_war_exploded/annotationPlatform.iml&#10;addAnnota&#9;PSI&#9;JAVA://cn.edu.pku.sei.Annotator.PageParameter#addAnnotation" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.CoffeeScript" />
+    <property name="SearchEverywhereHistoryKey" value="Integer.parseInt&#9;null&#9;null&#10;parseInt&#9;null&#9;null&#10;order by  limit 100 ) a order by  desc) b limit 100 ) c&#9;null&#9;null&#10;addAnnotation&#9;PSI&#9;JAVA://cn.edu.pku.sei.Annotator.Operator.TaskResultOperator#addAnnotationIntoString&#10;Annotation&#9;FILE&#9;file://E:/idea workspace/annotationPlatform/out/artifacts/annotationPlatform_war_exploded/annotationPlatform.iml&#10;addAnnota&#9;PSI&#9;JAVA://cn.edu.pku.sei.Annotator.PageParameter#addAnnotation" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
   <component name="RunDashboard">
@@ -872,7 +895,19 @@
       <workItem from="1515898386991" duration="10406000" />
       <workItem from="1515918302918" duration="2644000" />
       <workItem from="1515980728147" duration="8847000" />
-      <workItem from="1516000129103" duration="73000" />
+      <workItem from="1516000129103" duration="5603000" />
+      <workItem from="1516025013580" duration="4053000" />
+      <workItem from="1516066619983" duration="5144000" />
+      <workItem from="1516077067645" duration="13615000" />
+      <workItem from="1516091284944" duration="7086000" />
+      <workItem from="1516241982318" duration="30263000" />
+      <workItem from="1516329485611" duration="12745000" />
+      <workItem from="1516361892817" duration="1654000" />
+      <workItem from="1516363626236" duration="17284000" />
+      <workItem from="1516513846218" duration="13067000" />
+      <workItem from="1516588713285" duration="5736000" />
+      <workItem from="1516598663121" duration="30292000" />
+      <workItem from="1516788563475" duration="29000" />
     </task>
     <task id="LOCAL-00001" summary="annotationplatform">
       <created>1509087979982</created>
@@ -888,11 +923,18 @@
       <option name="project" value="LOCAL" />
       <updated>1515900152781</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="annotationplatform">
+      <created>1516001702112</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1516001702112</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="291848000" />
+    <option name="totallyTimeSpent" value="438346000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -900,33 +942,34 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.008237232" sideWeight="0.72617245" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6046128" sideWeight="0.8245083" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14991763" sideWeight="0.15733737" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1598023" sideWeight="0.1785174" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32857144" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.040816326" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32857144" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.060606062" sideWeight="0.84266263" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.016641453" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.0" sideWeight="0.8214826" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32751092" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.080937974" sideWeight="0.8525755" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14977308" sideWeight="0.1474245" order="5" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.031013615" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24810892" sideWeight="0.49423394" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21104388" sideWeight="0.6085106" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26626325" sideWeight="0.38056013" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.056818184" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24810892" sideWeight="0.48105437" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.50576603" order="6" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5634267" sideWeight="0.4969743" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5141612" sideWeight="0.8055976" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31694403" sideWeight="0.39065817" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.052950077" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18945634" sideWeight="0.4969743" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -943,163 +986,24 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/cn/edu/pku/sei/servlet/LabelTaskServlet.java</url>
-          <line>36</line>
-          <properties />
-          <option name="timeStamp" value="31" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/cn/edu/pku/sei/servlet/LabelTaskServlet.java</url>
-          <line>38</line>
-          <properties />
-          <option name="timeStamp" value="32" />
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/cn/edu/pku/sei/pageAppend/LabelTaskAppender.java</url>
+          <line>73</line>
+          <properties class="cn.edu.pku.sei.pageAppend.LabelTaskAppender" method="getItemDisplayInfoString">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="79" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="37" />
+      <option name="time" value="80" />
     </breakpoint-manager>
-    <watches-manager>
-      <configuration name="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory">
-        <watch expression="userID + &quot;_&quot; +PageParameter.labelTaskAppender" language="JSP" />
-      </configuration>
-    </watches-manager>
+    <watches-manager />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/pku/sei/pageAppend/Appender.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" column="17" lean-forward="false" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar!/javax/servlet/http/Cookie.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="91" column="18" lean-forward="false" selection-start-line="91" selection-start-column="18" selection-end-line="91" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/EcmaScript.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="758" column="0" lean-forward="false" selection-start-line="758" selection-start-column="0" selection-end-line="758" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar!/javax/servlet/ServletContext.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="71" column="11" lean-forward="false" selection-start-line="71" selection-start-column="11" selection-end-line="71" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar!/javax/servlet/http/HttpServletRequest.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="83">
-          <caret line="16" column="30" lean-forward="true" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/mylabelTaskBrowser.jsp" />
-    <entry file="file://$PROJECT_DIR$/annotationPlatform.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1046">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/jre/lib/rt.jar!/java/lang/Thread.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="215" column="0" lean-forward="false" selection-start-line="215" selection-start-column="0" selection-end-line="215" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/mylabelTaskBrowser.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="340" column="29" lean-forward="true" selection-start-line="340" selection-start-column="29" selection-end-line="340" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/sidebarMenuCreator.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/jre/lib/rt.jar!/java/sql/ResultSetMetaData.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="12" column="8" lean-forward="false" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/jre/lib/rt.jar!/java/net/DualStackPlainSocketImpl.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="222" column="22" lean-forward="false" selection-start-line="222" selection-start-column="22" selection-end-line="222" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/jre/lib/rt.jar!/java/io/Writer.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="118">
-          <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/labelTask.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-336">
-          <caret line="358" column="32" lean-forward="false" selection-start-line="358" selection-start-column="32" selection-end-line="358" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/register.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="615">
-          <caret line="45" column="83" lean-forward="true" selection-start-line="45" selection-start-column="83" selection-end-line="45" selection-end-column="83" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="32" column="64" lean-forward="false" selection-start-line="32" selection-start-column="64" selection-end-line="32" selection-end-column="64" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_javax_servlet_api_3_1_0.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/artifacts/annotationPlatform_war_exploded.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/misc.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.idea/modules.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1156,155 +1060,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/pku/sei/CookieOperations.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="28" column="1" lean-forward="true" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/pku/sei/servlet/UserLoginServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="38" column="5" lean-forward="false" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/pku/sei/servlet/LabelTaskServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="333">
-          <caret line="50" column="0" lean-forward="false" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/labelTask.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="515">
-          <caret line="44" column="5" lean-forward="false" selection-start-line="44" selection-start-column="5" selection-end-line="44" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/pku/sei/Annotator/PageParameter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="567">
-          <caret line="27" column="49" lean-forward="true" selection-start-line="27" selection-start-column="49" selection-end-line="27" selection-end-column="49" />
-          <folding>
-            <element signature="e#1551#1552#0" expanded="false" />
-            <element signature="e#1615#1616#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/pku/sei/Annotator/ItemAnnotator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5082">
-          <caret line="248" column="5" lean-forward="true" selection-start-line="248" selection-start-column="5" selection-end-line="248" selection-end-column="5" />
-          <folding>
-            <element signature="e#721#722#0" expanded="false" />
-            <element signature="e#750#751#0" expanded="false" />
-            <element signature="e#791#792#0" expanded="false" />
-            <element signature="e#826#827#0" expanded="false" />
-            <element signature="e#859#860#0" expanded="false" />
-            <element signature="e#889#890#0" expanded="false" />
-            <element signature="e#931#932#0" expanded="false" />
-            <element signature="e#967#968#0" expanded="false" />
-            <element signature="e#1004#1005#0" expanded="false" />
-            <element signature="e#1038#1039#0" expanded="false" />
-            <element signature="e#1084#1085#0" expanded="false" />
-            <element signature="e#1124#1125#0" expanded="false" />
-            <element signature="e#1163#1164#0" expanded="false" />
-            <element signature="e#1199#1200#0" expanded="false" />
-            <element signature="e#1247#1248#0" expanded="false" />
-            <element signature="e#1289#1290#0" expanded="false" />
-            <element signature="e#1324#1325#0" expanded="false" />
-            <element signature="e#1356#1357#0" expanded="false" />
-            <element signature="e#1400#1401#0" expanded="false" />
-            <element signature="e#1438#1439#0" expanded="false" />
-            <element signature="e#1475#1476#0" expanded="false" />
-            <element signature="e#1509#1510#0" expanded="false" />
-            <element signature="e#1555#1556#0" expanded="false" />
-            <element signature="e#1595#1596#0" expanded="false" />
-            <element signature="e#1643#1644#0" expanded="false" />
-            <element signature="e#1681#1682#0" expanded="false" />
-            <element signature="e#2219#2220#0" expanded="false" />
-            <element signature="e#2255#2256#0" expanded="false" />
-            <element signature="e#2443#2444#0" expanded="false" />
-            <element signature="e#2519#2520#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="4" column="9" lean-forward="false" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/pku/sei/pageAppend/LabelTaskBrowserAppender.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3489">
-          <caret line="77" column="25" lean-forward="false" selection-start-line="77" selection-start-column="25" selection-end-line="77" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/pku/sei/pageAppend/LabelItemNavigatorAppender.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="36" column="15" lean-forward="false" selection-start-line="36" selection-start-column="15" selection-end-line="36" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/pku/sei/pageAppend/SidebarAppender.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" column="49" lean-forward="true" selection-start-line="5" selection-start-column="49" selection-end-line="5" selection-end-column="49" />
-          <folding>
-            <element signature="e#164#165#0" expanded="false" />
-            <element signature="e#189#190#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/pku/sei/Annotator/Operator/TaskResultOperator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2889">
-          <caret line="82" column="43" lean-forward="true" selection-start-line="82" selection-start-column="43" selection-end-line="82" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/pku/sei/Annotator/Operator/TaskOperator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4998">
-          <caret line="248" column="1" lean-forward="true" selection-start-line="248" selection-start-column="1" selection-end-line="248" selection-end-column="1" />
-          <folding>
-            <element signature="e#7404#7405#0" expanded="false" />
-            <element signature="e#7431#7432#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/pku/sei/configuration/URL.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="387">
-          <caret line="48" column="66" lean-forward="true" selection-start-line="48" selection-start-column="66" selection-end-line="48" selection-end-column="66" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/DHTML.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-5340">
@@ -1312,73 +1067,346 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/pku/sei/Database/DatabaseBrowser.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/pku/sei/pageAppend/Appender.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2205">
-          <caret line="123" column="54" lean-forward="false" selection-start-line="123" selection-start-column="54" selection-end-line="123" selection-end-column="54" />
+        <state relative-caret-position="105">
+          <caret line="5" column="17" lean-forward="false" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/annotationPlatform.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1218">
+          <caret line="58" column="9" lean-forward="true" selection-start-line="58" selection-start-column="9" selection-end-line="58" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/pku/sei/CookieOperations.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="27" column="5" lean-forward="true" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Resources/database.properties">
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/pku/sei/Database/DatabaseBrowser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="10" column="48" lean-forward="true" selection-start-line="10" selection-start-column="48" selection-end-line="10" selection-end-column="48" />
+        <state relative-caret-position="1656">
+          <caret line="137" column="1" lean-forward="false" selection-start-line="137" selection-start-column="0" selection-end-line="137" selection-end-column="1" />
+          <folding>
+            <element signature="e#902#903#0" expanded="false" />
+            <element signature="e#932#933#0" expanded="false" />
+            <element signature="e#975#976#0" expanded="false" />
+            <element signature="e#1006#1007#0" expanded="false" />
+            <element signature="e#1053#1054#0" expanded="false" />
+            <element signature="e#1088#1089#0" expanded="false" />
+            <element signature="e#1137#1138#0" expanded="false" />
+            <element signature="e#1174#1175#0" expanded="false" />
+            <element signature="e#1225#1226#0" expanded="false" />
+            <element signature="e#1264#1265#0" expanded="false" />
+            <element signature="e#1312#1313#0" expanded="false" />
+            <element signature="e#1348#1349#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/jre/lib/rt.jar!/java/lang/Thread.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="215" column="0" lean-forward="false" selection-start-line="215" selection-start-column="0" selection-end-line="215" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/jre/lib/rt.jar!/java/lang/NumberFormatException.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/jre/lib/rt.jar!/sun/nio/ch/WindowsSelectorImpl.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="121">
+          <caret line="453" column="27" lean-forward="false" selection-start-line="453" selection-start-column="27" selection-end-line="453" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/pku/sei/configuration/URL.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="5" column="18" lean-forward="true" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/jre/lib/rt.jar!/java/sql/ResultSetMetaData.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="12" column="8" lean-forward="false" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/sidebarMenuCreator.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-632">
+          <caret line="10" column="9" lean-forward="false" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar!/javax/servlet/ServletRequest.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="31" column="11" lean-forward="false" selection-start-line="31" selection-start-column="11" selection-end-line="31" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/jquery.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="3" column="3231" lean-forward="false" selection-start-line="3" selection-start-column="3231" selection-end-line="3" selection-end-column="3231" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-272">
+          <caret line="48" column="66" lean-forward="true" selection-start-line="48" selection-start-column="66" selection-end-line="48" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/register.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="57" column="125" lean-forward="false" selection-start-line="57" selection-start-column="104" selection-end-line="57" selection-end-column="125" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1155">
+          <caret line="55" column="14" lean-forward="true" selection-start-line="55" selection-start-column="14" selection-end-line="55" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/pku/sei/servlet/LabelTaskServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="27" column="25" lean-forward="false" selection-start-line="27" selection-start-column="7" selection-end-line="27" selection-end-column="65" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/pku/sei/servlet/DatabaseBrowserServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1176">
-          <caret line="67" column="40" lean-forward="false" selection-start-line="67" selection-start-column="40" selection-end-line="67" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/pku/sei/LabelTask/Task.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1176">
-          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/pku/sei/servlet/ConstructLabelTaskServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="57" column="10" lean-forward="false" selection-start-line="57" selection-start-column="10" selection-end-line="57" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/userMainPage.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="515">
-          <caret line="509" column="92" lean-forward="false" selection-start-line="509" selection-start-column="92" selection-end-line="509" selection-end-column="92" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/userMainPage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="225" column="18" lean-forward="false" selection-start-line="225" selection-start-column="18" selection-end-line="225" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/pku/sei/pageAppend/LabelTaskAppender.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="539">
-          <caret line="71" column="18" lean-forward="false" selection-start-line="71" selection-start-column="18" selection-end-line="71" selection-end-column="18" />
+        <state relative-caret-position="779">
+          <caret line="51" column="35" lean-forward="false" selection-start-line="51" selection-start-column="35" selection-end-line="51" selection-end-column="35" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/labelTaskBrowser.jsp">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="58">
+          <caret line="457" column="26" lean-forward="true" selection-start-line="457" selection-start-column="26" selection-end-line="457" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/mylabelTaskBrowser.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="267" column="72" lean-forward="true" selection-start-line="267" selection-start-column="72" selection-end-line="267" selection-end-column="72" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/pku/sei/servlet/UserLoginServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="90" column="0" lean-forward="false" selection-start-line="90" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/pku/sei/servlet/ConstructLabelTaskServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="23" column="59" lean-forward="true" selection-start-line="23" selection-start-column="59" selection-end-line="23" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/userMainPage.jsp">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
-          <caret line="466" column="26" lean-forward="true" selection-start-line="466" selection-start-column="26" selection-end-line="466" selection-end-column="26" />
+          <caret line="507" column="87" lean-forward="true" selection-start-line="507" selection-start-column="87" selection-end-line="507" selection-end-column="87" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/userMainPage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1243">
+          <caret line="188" column="9" lean-forward="false" selection-start-line="188" selection-start-column="9" selection-end-line="188" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/jre/lib/rt.jar!/java/lang/Integer.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="151" column="0" lean-forward="false" selection-start-line="151" selection-start-column="0" selection-end-line="151" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/ECMAScript.js2">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="23" lean-forward="false" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Resources/database.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/pku/sei/Annotator/PageParameter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="263">
+          <caret line="24" column="31" lean-forward="false" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/pku/sei/LabelTask/Task.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="322" column="25" lean-forward="false" selection-start-line="322" selection-start-column="25" selection-end-line="322" selection-end-column="25" />
+          <folding>
+            <element signature="e#11294#11295#0" expanded="false" />
+            <element signature="e#11342#11343#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/jre/lib/rt.jar!/java/lang/String.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="1037" column="18" lean-forward="false" selection-start-line="1037" selection-start-column="18" selection-end-line="1037" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/pku/sei/Annotator/ItemAnnotator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5673">
+          <caret line="27" column="30" lean-forward="true" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="30" />
+          <folding>
+            <element signature="e#747#748#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/pku/sei/pageAppend/LabelItemNavigatorAppender.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1074">
+          <caret line="9" column="60" lean-forward="true" selection-start-line="9" selection-start-column="60" selection-end-line="9" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/labelTask.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="39" column="24" lean-forward="true" selection-start-line="39" selection-start-column="24" selection-end-line="39" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/labelTaskBrowser.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="16" column="13" lean-forward="true" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/pku/sei/Annotator/Operator/TaskResultOperator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2814">
+          <caret line="11" column="33" lean-forward="true" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
+          <folding>
+            <element signature="e#1031#1032#0" expanded="false" />
+            <element signature="e#1071#1072#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/pku/sei/servlet/SubTaskServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1386">
+          <caret line="79" column="21" lean-forward="false" selection-start-line="79" selection-start-column="21" selection-end-line="79" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/pku/sei/pageAppend/SidebarAppender.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" column="35" lean-forward="false" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
+          <folding>
+            <element signature="e#164#165#0" expanded="true" />
+            <element signature="e#189#190#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/myAnnotateTaskBrowser.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5607">
+          <caret line="267" column="77" lean-forward="false" selection-start-line="267" selection-start-column="77" selection-end-line="267" selection-end-column="77" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/pku/sei/pageAppend/LabelTaskBrowserAppender.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5187">
+          <caret line="256" column="5" lean-forward="false" selection-start-line="256" selection-start-column="5" selection-end-line="256" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/labelTask.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5943">
+          <caret line="283" column="57" lean-forward="false" selection-start-line="283" selection-start-column="57" selection-end-line="283" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/pku/sei/pageAppend/LabelTaskAppender.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1533">
+          <caret line="74" column="0" lean-forward="false" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/pku/sei/Annotator/Operator/TaskOperator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3486">
+          <caret line="267" column="0" lean-forward="false" selection-start-line="267" selection-start-column="0" selection-end-line="268" selection-end-column="0" />
           <folding />
         </state>
       </provider>

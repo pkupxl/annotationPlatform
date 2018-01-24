@@ -6,7 +6,6 @@
 <%@ page import="java.lang.reflect.Parameter" %>
 <%@ page import="cn.edu.pku.sei.CookieOperations" %>
 
-
 <!-- saved from url=(0059)https://adminlte.io/themes/AdminLTE/pages/layout/boxed.html -->
 <html class="gr__adminlte_io" style="height: auto; min-height: 100%;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
@@ -269,19 +268,22 @@
                                 pageIndex = 0;
                                 dataIndex = 0;
                             }
-                            ServletContext context = getServletConfig().getServletContext();
+                      //      ServletContext context = getServletConfig().getServletContext();
                             LabelTaskAppender appender = null;
                             try {
                                 appender =(LabelTaskAppender)session.getAttribute(userID + "_" +PageParameter.labelTaskAppender);
+                                int taskID = Integer.parseInt(request.getParameter("taskID"));
+                                int subtaskID = Integer.parseInt(request.getParameter("subtaskID"));
                                 if(appender == null){
-                                    int taskID = Integer.parseInt(request.getParameter("taskID"));
-                                    appender = new LabelTaskAppender(taskID , userID);
+                                    appender = new LabelTaskAppender(taskID ,subtaskID , userID);
                                     session.setAttribute(userID + "_" + PageParameter.labelTaskAppender , appender);
+                                }else {
+                                    appender.Update(taskID,subtaskID);
                                 }
                             }catch(Exception e){
                                 e.printStackTrace();
                             }
-                          out.print(appender.getItemDisplayInfoString(pageIndex , dataIndex));
+                            out.print(appender.getItemDisplayInfoString(pageIndex , dataIndex));
                         %>
                     </div>
                 </div>
