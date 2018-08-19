@@ -252,7 +252,7 @@
         <section class="content">
             <div class="browser-section box">
                 <div class="box-header with-border" >
-                    <a href="mylabelTaskBrowser.jsp">我的标注任务</a>
+                    <a href="myAnnotateTaskBrowser.jsp">我的标注任务</a>
                 </div>
                 <div class="box-body">
                     <ul id="taskBroswer" class="tree" data-widget="tree">

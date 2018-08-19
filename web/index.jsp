@@ -4,7 +4,8 @@
 
 
 <!-- saved from url=(0059)https://adminlte.io/themes/AdminLTE/pages/layout/boxed.html -->
-<html class="gr__adminlte_io" style="height: auto; min-height: 100%;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html class="gr__adminlte_io" style="height: auto; min-height: 100%;">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>AdminLTE 2 | Boxed Layout</title>

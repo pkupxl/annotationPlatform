@@ -137,7 +137,7 @@ public class LabelTaskAppender {
         String result =
             "<tr>" +
                 "<th class='operationSection-index'>#</th>" +
-                "<th class='operationSection-annotation'>结果</th>" +
+                "<th class='operationSection-annotation'>标注结果</th>" +
                 "<th class='operationSection-operation'>操作</th>" +
             "</tr>";
         return result;

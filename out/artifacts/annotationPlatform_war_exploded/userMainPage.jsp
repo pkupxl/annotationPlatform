@@ -4,7 +4,8 @@
 
 
 <!-- saved from url=(0059)https://adminlte.io/themes/AdminLTE/pages/layout/boxed.html -->
-<html class="gr__adminlte_io" style="height: auto; min-height: 100%;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html class="gr__adminlte_io" style="height: auto; min-height: 100%;">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>AdminLTE 2 | Boxed Layout</title>
@@ -425,7 +426,7 @@
                 <li id="database" >
                     <i class="fa fa-envelope bg-blue"></i>
                     <div class="timeline-item">
-                        <h3 class="timeline-header">选择数据库</h3>
+                        <h3 class="timeline-header">选择标注数据所在数据库</h3>
                         <div class="timeline-body">
                             <form class="form-horizontal" role="form">
                                 <!--  数据库地址  -->
@@ -475,7 +476,7 @@
                 <li id="tableSelector" style="opacity:0">
                     <i class="fa fa-database bg-blue"></i>
                     <div class="timeline-item">
-                        <h3 class="timeline-header">选择表格</h3>
+                        <h3 class="timeline-header">选择数据表格</h3>
                         <div class="timeline-body">
                             <form class="form-horizontal" role="form">
                                 <div class="form-group">

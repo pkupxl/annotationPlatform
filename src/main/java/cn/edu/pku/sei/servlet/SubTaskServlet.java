@@ -92,12 +92,18 @@ public class SubTaskServlet extends HttpServlet{
             int taskID=Integer.parseInt(request.getParameter("taskID")) ;
             int subtaskID=Integer.parseInt(request.getParameter("subtaskID")) ;
             String userID=request.getParameter("userID");
+
+            String sql0="select Annotator from TABLENAME where SubtaskId = ?";
+
             String sql= "update TABLENAME set Annotator = ? where SubtaskId = ?";
             String sql1="update usertaskinfo set annotatetask = ? where userID = ?";
             String sql2="select * from usertaskinfo where userID = ?";
 
             String tablename="subtasks_"+taskID;
             sql=sql.replace("TABLENAME",tablename);
+            sql0=sql0.replace("TABLENAME",tablename);
+
+
             ResourceBundle bundle;
 
             try {
@@ -108,8 +114,22 @@ public class SubTaskServlet extends HttpServlet{
                 sqlDriver = bundle.getString("subtasksInfoDriver");
                 SqlConnector conn1 = new SqlConnector(sqlUrl , sqlUser , sqlPwd , sqlDriver);
                 conn1.start();
+                conn1.setPreparedStatement(sql0);
+                conn1.setInt(1,subtaskID);
+                String AllAnnotator=null;
+                ResultSet rs= conn1.executeQuery();
+                if(rs.next())
+                {
+                    AllAnnotator=rs.getString(1);
+                    if(AllAnnotator.isEmpty()) {
+                        AllAnnotator = userID;
+                    }else{
+                        AllAnnotator = AllAnnotator+" , "+userID;
+                    }
+                }
+
                 conn1.setPreparedStatement(sql);
-                conn1.setString(1,userID);
+                conn1.setString(1,AllAnnotator);
                 conn1.setInt(2,subtaskID);
                 conn1.executeUpdate();
                 conn1.close();
@@ -124,7 +144,7 @@ public class SubTaskServlet extends HttpServlet{
                 conn2.setPreparedStatement(sql2);
                 conn2.setString(1,userID);
                 String taskinfo=Integer.toString(taskID)+","+Integer.toString(subtaskID);
-                ResultSet rs = conn2.executeQuery();
+                rs = conn2.executeQuery();
                 if(rs.next()){
                     if(rs.getString(3)!="")
                         taskinfo=rs.getString(3)+";"+taskinfo;

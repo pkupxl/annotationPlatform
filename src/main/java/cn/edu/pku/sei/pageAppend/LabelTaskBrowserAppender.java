@@ -9,7 +9,7 @@ import java.util.ResourceBundle;
  * Created by oliver on 2017/8/11.
  */
 public class LabelTaskBrowserAppender {
-    private static final int TASK_PER_PAGE = 5;
+    private static final int TASK_PER_PAGE = 20;
     private static String taskBrowserFooterAppendString = "";
     private static String mytaskBrowserFooterAppendString = "";
     private static String myAnnotateBrowserFooterAppendString="";
@@ -504,11 +504,11 @@ public class LabelTaskBrowserAppender {
                     String Annotator=rs.getString(1);
                     String hasannotator="yes";
                     String Operate="";
-                    if(Annotator.isEmpty())
-                    {
-                        hasannotator="no";
+                  //  if(Annotator.isEmpty())
+                 //   {
+                  //      hasannotator="no";
                         Operate="<button onClick=\"AddtoMyannotateList("+ taskID + ","+subtaskID+",'"+userID+"')\">加入标注</button>";
-                    }
+                //    }
                     tmp=tmp+  "<tr >" +
                             "<th >"+subtaskID+
                             "</th >"+

@@ -22,6 +22,7 @@
     width:300px;
     border-bottom:2px solid #C3DEB7;
     background: #ECF0F5;
+    overflow:auto;
 }
 
 .div-functionAnnotation{
