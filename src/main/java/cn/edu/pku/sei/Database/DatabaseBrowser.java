@@ -69,7 +69,7 @@ public class DatabaseBrowser {
     }
 
     public boolean start(){
-        boolean result;
+        boolean result=false;
         conn = new SqlConnector(sqlUrl , sqlUser , sqlPassword , sqlDriverName);
         result = conn.start();
         if(result)

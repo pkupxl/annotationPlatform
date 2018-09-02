@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<%@ page import="cn.edu.pku.sei.pageAppend.SidebarAppender"%>
-
 
 <!-- saved from url=(0059)https://adminlte.io/themes/AdminLTE/pages/layout/boxed.html -->
-<html class="gr__adminlte_io" style="height: auto; min-height: 100%;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html class="gr__adminlte_io" style="height: auto; min-height: 100%;">
 
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>AdminLTE 2 | Boxed Layout</title>
     <!-- Tell the browser to be responsive to screen width -->
@@ -67,7 +67,8 @@
 </div>
 
 <!-- jQuery 3 -->
-<script async="" src="js/analytics.js"></script><script src="js/jquery.min.js"></script>
+<script async="" src="js/analytics.js"></script>
+<script src="js/jquery.min.js"></script>
 <!-- Bootstrap 3.3.7 -->
 <script src="js/bootstrap.min.js"></script>
 <!-- SlimScroll -->

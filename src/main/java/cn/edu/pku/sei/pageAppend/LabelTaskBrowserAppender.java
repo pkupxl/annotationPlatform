@@ -352,7 +352,7 @@ public class LabelTaskBrowserAppender {
 
         result =
             "<li style='list-style-type:none;margin:0px;padding:0px' class='treeview'>" +
-                "<a href='http://www.baidu.com'>" +
+                "<a href='#'>" +
                     "<span>" +
                         "<table class='table table-bordered' style='margin:0px'>" +
                             "<tbody>" +
@@ -420,7 +420,7 @@ public class LabelTaskBrowserAppender {
 
         result =
                 "<li style='list-style-type:none;margin:0px;padding:0px' class='treeview'>" +
-                        "<a href='http://www.baidu.com'>" +
+                        "<a href='#'>" +
                         "<span>" +
                         "<table class='table table-bordered' style='margin:0px'>" +
                         "<tbody>" +

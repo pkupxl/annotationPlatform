@@ -1,12 +1,10 @@
 <!DOCTYPE html>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<%@ page import="cn.edu.pku.sei.pageAppend.SidebarAppender"%>
-
 
 <!-- saved from url=(0059)https://adminlte.io/themes/AdminLTE/pages/layout/boxed.html -->
 <html class="gr__adminlte_io" style="height: auto; min-height: 100%;">
-<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>AdminLTE 2 | Boxed Layout</title>
     <!-- Tell the browser to be responsive to screen width -->
@@ -29,6 +27,7 @@
     <!-- Google Font -->
     <link rel="stylesheet" href="css/css.css">
 </head>
+
 <!-- ADD THE CLASS layout-boxed TO GET A BOXED LAYOUT -->
 <body class="skin-blue layout-boxed sidebar-mini" data-gr-c-s-loaded="true" style="height: auto; min-height: 100%;">
 <div style="height:200px">
@@ -40,24 +39,24 @@
             <h3>登录</h3>
         </div>
         <form class="form-horizontal" action="UserLogin" method="post" onSubmit="validCheck()">
-            <div class="box-body" style="text-align:center">
-                <div class="form-group" >
-                    <label for="login_user" class="col-sm-4 control-label">用户名：</label>
-                    <div class="col-sm-8">
-                        <input class="form-control" id="login_user" name="login_user" placeholder="user">
-                    </div>
-                </div>
-                <div class="form-group" style="text-align:center">
-                    <label for="login_pwd" class="col-sm-4 control-label">密  码：</label>
-                    <div class="col-sm-8">
-                        <input type="password" class="form-control" id="login_pwd" name="login_pwd" placeholder="password">
-                    </div>
+        <div class="box-body" style="text-align:center">
+            <div class="form-group" >
+                <label for="login_user" class="col-sm-4 control-label">用户名：</label>
+                <div class="col-sm-8">
+                    <input class="form-control" id="login_user" name="login_user" placeholder="user">
                 </div>
             </div>
-            <div class="box-footer with-border" style="text-align: center">
-                <h5><button type="submit">登录</button>还没有账号？ <a href="register.jsp">立即注册</a></h5>
+            <div class="form-group" style="text-align:center">
+                <label for="login_pwd" class="col-sm-4 control-label">密  码：</label>
+                <div class="col-sm-8">
+                    <input type="password" class="form-control" id="login_pwd" name="login_pwd" placeholder="password">
+                </div>
             </div>
-        </form>
+        </div>
+        <div class="box-footer with-border" style="text-align: center">
+            <h5><button type="submit">登录</button>还没有账号？ <a href="register.jsp">立即注册</a></h5>
+        </div>
+    </form>
     </div>
 </div>
 
